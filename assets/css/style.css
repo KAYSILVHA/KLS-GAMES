@@ -1,8 +1,24 @@
-*{
+* {
     background-color: #1C1C1C;
     color: white;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.about h2,
+.services h2 {
+    font-size: 3rem;
+}
+
+h1,
+h2,
+span {
+    font-family: 'Press Start 2P', system-ui;
 }
 
 header {
@@ -10,48 +26,121 @@ header {
     background-color: #1C1C1C;
 }
 
+
 .navbar-brand img {
     width: 10rem;
     height: auto;
 }
 
-.nav a{
+.nav a {
     color: white;
     font-weight: 700;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #E82E35;
 }
 
-.about{
+.banner {
+    height: auto;
+    margin: 5rem 0;
+    position: relative;
+}
+
+.banner img.banner-image {
+    width: 60vw;
+    height: auto;
+    z-index: 1;
+}
+
+.banner .title {
+    position: absolute;
+    right: -70px;
+    z-index: 100;
+    top: 75px;
+    background-color: transparent;
+    width: 55%;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    background-color: transparent;
+    width: 100%;
+}
+
+.banner h1 span {
+    background-color: transparent;
+}
+
+.banner .title p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+.banner .title p span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+span {
+    color: #E82E35;
+}
+
+.logo-banner {
+    width: 10rem;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+.about {
     height: auto;
     padding: 20px 0;
     position: relative;
     margin: 20px 0;
 }
 
-.about p{
+.about p {
     text-align: justify;
     width: 55%;
     font-size: 1.5rem;
 }
- 
-h2{
-    font-family: 'Press Start 2P', system-ui;
-}
 
-.about .retangle{
+
+.about .retangle {
     background-color: #E82E35;
     height: 40rem;
     width: 10rem;
 }
 
-.about img{
-    width: 400px;
-    height: 18rem;
+.about img {
+    background-color: transparent;
+    width: 450px;
+    height: auto;
     position: absolute;
-    right: -9rem;
+    right: 400px;
     top: 0;
     overflow: hidden;
+}
+
+.image-first,
+.image-second {
+    height: auto;
+}
+
+.image-first img,
+.image-second img {
+    width: 100vw;
+    height: auto;
+}
+
+.services {
+    height: auto;
+}
+
+.services h2{
+    width: 70%;
 }
