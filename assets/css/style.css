@@ -1,0 +1,57 @@
+*{
+    background-color: #1C1C1C;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    padding: 30px 0;
+    background-color: #1C1C1C;
+}
+
+.navbar-brand img {
+    width: 10rem;
+    height: auto;
+}
+
+.nav a{
+    color: white;
+    font-weight: 700;
+}
+
+.nav a:hover{
+    color: #E82E35;
+}
+
+.about{
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+    margin: 20px 0;
+}
+
+.about p{
+    text-align: justify;
+    width: 55%;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.about .retangle{
+    background-color: #E82E35;
+    height: 40rem;
+    width: 10rem;
+}
+
+.about img{
+    width: 400px;
+    height: 18rem;
+    position: absolute;
+    right: -9rem;
+    top: 0;
+    overflow: hidden;
+}
