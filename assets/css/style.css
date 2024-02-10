@@ -1,14 +1,58 @@
+/* geral */
 * {
     background-color: #1C1C1C;
     color: white;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
+/*header*/
+
+header {
+    padding: 30px 0;
+    background-color: #1C1C1C;
+}
+
+.navbar-brand img {
+    width: 10rem;
+    height: auto;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: #E82E35;
+}
+
+@media screen and (max-width: 991px){
+    .nav a {
+        font-size: 0.8rem;
+    }
+
+    .navbar-brand img {
+        width: 6rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        display: none;
+    }
+}
+
+/* main*/
+
 main{
     display: flex;
     flex-direction: column;
     gap: 10rem;
 }
+
 
 .about h2,
 .services h2 {
@@ -21,25 +65,6 @@ span {
     font-family: 'Press Start 2P', system-ui;
 }
 
-header {
-    padding: 30px 0;
-    background-color: #1C1C1C;
-}
-
-
-.navbar-brand img {
-    width: 10rem;
-    height: auto;
-}
-
-.nav a {
-    color: white;
-    font-weight: 700;
-}
-
-.nav a:hover {
-    color: #E82E35;
-}
 
 .banner {
     height: auto;
