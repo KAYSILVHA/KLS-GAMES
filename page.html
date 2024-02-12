@@ -23,15 +23,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300&family=Praise&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="container-fluid">
-        <section class="container d-flex justify-content-center align-items-center">
+        <section class="container-lg container-fluid d-flex justify-content-center align-items-center">
             <nav class="navbar w-100 d-flex justify-content-center align-items-center">
 
-                <div class="container d-flex align-items-center justify-content-center" id="navbarNav w-100">
+                <div class="container-lg container-fluid d-flex align-items-center justify-content-center"
+                    id="navbarNav w-100">
                     <ul class="nav d-flex flex-row align-items-center justify-content-between w-100">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">INICIO</a>
@@ -61,9 +64,9 @@
 
     </header>
     <main class="container-fluid m-0 p-0">
-        <section class="container-fluid d-flex align-items-start banner p-0">
+        <section class="d-flex align-items-start banner p-0">
             <img src="./assets/images/banner-image.png" alt="" class="banner-image">
-            <div class="title">
+            <div class="title d-flex flex-column align-items-start">
                 <h1>Um novo <span>Universo</span></h1>
                 <p>Seu mundo geek começa <span>aqui</span>!</p>
             </div>
@@ -94,27 +97,136 @@
         <section class="container-fluid d-flex align-items-center justify-content-center services">
             <section class="container">
                 <h2>Descubra nossos <span>Serviços</span></h2>
-                <div class="container d-flex flex-column align-items-center justify-content-between">
-
+                <div class="container d-flex flex-column align-items-center justify-content-between services-container">
+                    <div class="row first-row d-flex justify-content-between w-100">
+                        <div class="col-5">
+                            <img src="./assets/images/console-image.png" alt="Console Image">
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-start">
+                            <h3>Bateu aquela vontade de jogar?</h3>
+                            <p>
+                                Temos uma variedade de consoles completos esperando por você!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row second-row d-flex justify-content-between w-100">
+                        <div class="col-6 d-flex flex-column align-items-start">
+                            <h3>Já tem console?
+                                Temos diversos games!</h3>
+                            <p>
+                                Encontre o próximo desafio que vai te envolver por horas a fio!
+                            </p>
+                        </div>
+                        <div class="col-5">
+                            <img src="./assets/images/game-image.png" alt="Games Image">
+                        </div>
+                    </div>
+                    <div class="row third-row d-flex justify-content-between w-100">
+                        <div class="col-5">
+                            <img src="./assets/images/products-image.png" alt="Products Image">
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-start">
+                            <h3>Quer comprar umas coisinhas?</h3>
+                            <p>
+                                Temos artigos personalizados, placas decorativas, consoles, games e muito mais!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row four-row d-flex justify-content-between w-100">
+                        <div class="col-6 d-flex flex-column align-items-start">
+                            <h3>Quebrou ou deu problema? A gente concerta!</h3>
+                            <p>
+                                Drones? Celulares? Setup? Consoles? A gente resolve para você!
+                            </p>
+                        </div>
+                        <div class="col-5">
+                            <img src="./assets/images/tech-image.png" alt="Tech Image">
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
+
         <section class="container-fluid d-flex align-items-center image-second p-0">
             <img src="./assets/images/game-zone-image.png" alt="Image Game">
         </section>
 
+        <section class="container-fluid products p-0">
+            <h2 class="container mb-5">Nossos <span>Produtos</span></h2>
+            <section class="d-flex flex-column">
+                <div class="d-flex align-items-center mt-5">
+                    <div class="retangle"></div>
+                    <div class="container container-products-one m-0">
+                        <h4>TEMOS DIVERSAS FIGURAS DE AÇÃO!</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="d-flex flex-column">
+                <div class="d-flex align-items-center mt-5 justify-content-end">
+                    <div class="container container-products-two m-0">
+                        <h4>TEMOS DIVERSAS FIGURAS DE AÇÃO!</h4>
+                    </div>
+                    <div class="retangle-two"></div>
+                </div>
+            </section>
+        </section>
+
         <section class="container-fluid d-flex align-items-center image-third p-0">
             <img src="./assets/images/new-adventure-image.png" alt="Image Adventure">
-
         </section>
-        <section></section>
+
         <section></section>
     </main>
-    <footer>
-        <section class="footer-image container-fluid d-flex align-items-center p-0">
+    <footer class="container-fluid m-0 p-0">
+        <section class="footer-image container-fluid d-flex align-items-center p-0 m-0">
             <img src="./assets/images/footer-image.png" alt="Image Footer">
         </section>
-        
+        <section class="container-fluid d-flex p-0">
+            <section class="bar m-0">
+            </section>
+            <section class="terms container-lg container-md-fluid d-flex flex-column justify-content-center align-items-center">
+                <section class="container-lg container-md-fluid d-flex flex-md-row flex-column justify-content-md-around justify-content-center align-items-md-start align-items-center p-5 container-terms">
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Legal</h4>
+                        <p class="m-0 mb-2">Política de Privacidade</p>
+                        <p>Termos de Uso</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Suporte</h4>
+                        <p class="m-0 mb-2">FAQ</p>
+                        <p>Fale conosco</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Sobre nós</h4>
+                        <p class="m-0 mb-2">Informações da Empresa</p>
+                    </div>
+                </section>
+                <section class="logo container d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/logo-banner.png" alt="">
+                </section>
+                <section class="adress container d-flex flex-column justify-content-center align-items-center text-center">
+                    <p class="m-1 mb-2">Rua Antônio Felipe, 1084, Centro, Paranavaí - PR, CEP: 87702-010</p>
+                    <p>Aberto em horário comercial de segunda a sábado </p>
+                </section>
+                <section class="social container">
+                    <div class="row align-items-center justify-content-center">
+                        <img src="./assets/images/linkedin.png" alt="LinkedIn Logo">
+                        <img src="./assets/images/face.png" alt="Facebook Logo">
+                        <img src="./assets/images/insta.png" alt="Instagram Logo">
+                        <img src="./assets/images/youtube.png" alt="Youtube Logo">
+                        <img src="./assets/images/twiter.png" alt="Twitter Logo">
+                    </div>
+                </section>
+                <section class="copyright container-fluid d-flex align-items-center justify-content-center">
+                    <p>© 2024 KLS Games, Todos os Direitos Reservados</p>
+                </section>
+                <section class="whaterMark container-fluid d-flex align-items-center justify-content-center">
+                    <a class="d-flex align-items-center" href="https://github.com/KAYSILVHA" target="_blank">
+                        <p class="m-0">Create <strong>BY</strong> <span>Me</span></p>
+                        <img src="./assets/images/waterMark-image.png" alt="WhaterMark">
+                    </a>
+                </section>
+            </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

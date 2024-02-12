@@ -3,7 +3,7 @@
     background-color: #1C1C1C;
     color: white;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    border: none;
 }
 
 /*header*/
@@ -28,7 +28,7 @@ header {
     color: #E82E35;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .nav a {
         font-size: 0.8rem;
     }
@@ -39,23 +39,24 @@ header {
     }
 }
 
-@media screen and (max-width: 600px){
-    header{
+@media screen and (max-width: 767px) {
+    header {
         display: none;
     }
 }
 
 /* main*/
 
-main{
+main {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 20rem;
 }
 
 
 .about h2,
-.services h2 {
+.services h2,
+.products h2 {
     font-size: 3rem;
 }
 
@@ -80,17 +81,16 @@ span {
 
 .banner .title {
     position: absolute;
-    right: -70px;
+    right: 23rem;
     z-index: 100;
     top: 75px;
     background-color: transparent;
-    width: 55%;
+    width: 30vw;
 }
 
 .banner h1 {
     font-size: 5rem;
     background-color: transparent;
-    width: 100%;
 }
 
 .banner h1 span {
@@ -108,7 +108,6 @@ span {
     font-family: 'Poppins', sans-serif;
 }
 
-
 span {
     color: #E82E35;
 }
@@ -116,7 +115,7 @@ span {
 .logo-banner {
     width: 10rem;
     position: absolute;
-    right: 50px;
+    right: 80px;
     bottom: 50px;
 }
 
@@ -159,16 +158,160 @@ span {
 
 .image-first img,
 .image-second img,
-.image-third img,
-.footer-image img {
-    width: 100vw;
+.image-third img {
+    width: 99vw;
     height: auto;
+}
+
+.footer-image img {
+    width: 99vw;
+    height: 50rem;
 }
 
 .services {
     height: auto;
 }
 
-.services h2{
+.services h2 {
     width: 70%;
+}
+
+.services-container {
+    gap: 10rem;
+}
+
+.first-row img {
+    width: 20rem;
+}
+
+.second-row img {
+    width: 30rem;
+}
+
+.third-row img {
+    width: 30rem;
+}
+
+.four-row img {
+    width: 30rem;
+}
+
+
+.products {
+    height: auto;
+    padding: 30px 0;
+}
+
+.products .retangle {
+    background-color: #E82E35;
+    height: 20rem;
+    width: 15%;
+}
+
+.products .retangle-two {
+    background-color: #242424;
+    height: 20rem;
+    width: 15.8%;
+}
+
+.container-products-one {
+    width: 70vw;
+    height: 40rem;
+    border: 6px solid #454545;
+}
+
+.container-products-two {
+    width: 70vw;
+    height: 40rem;
+    border: 6px solid #454545;
+}
+
+footer {
+    height: auto;
+}
+
+.bar {
+    height: 60rem;
+    background-color: #E82E35;
+    width: 20rem
+}
+
+.terms p {
+    color: #444343;
+}
+
+.adress p {
+    font-size: 0.9rem;
+}
+
+.whaterMark p,
+.copyright p {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.logo {
+    margin: 4rem 0;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.social {
+    margin-top: 2rem;
+}
+
+.social img {
+    width: 4rem;
+}
+
+.copyright {
+    margin-top: 4rem;
+}
+
+.whaterMark {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    bottom: 3rem;
+    right: -20rem;
+    font-family: "Pontano Sans", sans-serif;
+    margin-bottom: 5rem;
+}
+
+
+.whaterMark img {
+    width: 2rem;
+}
+
+.whaterMark span {
+    font-family: "Pontano Sans", sans-serif;
+}
+
+.whaterMark a {
+    text-decoration: none;
+}
+
+.whaterMark strong {
+    font-family: "Praise", cursive;
+    font-weight: normal;
+    margin-right: 2px;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-image img {
+        height: auto;
+    }
+
+    .bar{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container-terms{
+        gap: 3rem;
+    }
 }
