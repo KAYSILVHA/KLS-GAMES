@@ -123,14 +123,13 @@ span {
 
 .about {
     height: auto;
-    padding: 20px 0;
     position: relative;
     margin: 20px 0;
 }
 
 .about p {
     text-align: justify;
-    width: 55%;
+    width: 70%;
     font-size: 1.5rem;
 }
 
@@ -152,12 +151,16 @@ span {
 }
 
 .image-first,
-.image-second {
+.image-second,
+.image-third,
+.footer-image {
     height: auto;
 }
 
 .image-first img,
-.image-second img {
+.image-second img,
+.image-third img,
+.footer-image img {
     width: 100vw;
     height: auto;
 }
