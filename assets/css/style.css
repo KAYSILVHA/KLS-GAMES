@@ -17,6 +17,7 @@ header {
     width: 10rem;
     height: auto;
     text-align: center;
+    align-self: center;
 }
 
 .nav a {
@@ -26,23 +27,6 @@ header {
 
 .nav a:hover {
     color: #E82E35;
-}
-
-@media screen and (max-width: 991px) {
-    .nav a {
-        font-size: 0.8rem;
-    }
-
-    .navbar-brand img {
-        width: 6rem;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    header {
-        display: none;
-    }
 }
 
 /* main*/
@@ -71,6 +55,7 @@ span {
     height: auto;
     margin: 5rem 0;
     position: relative;
+    align-items: flex-start;
 }
 
 .banner img.banner-image {
@@ -124,6 +109,7 @@ span {
     height: auto;
     position: relative;
     margin: 20px 0;
+    overflow-x: hidden;
 }
 
 .about p {
@@ -141,12 +127,12 @@ span {
 
 .about img {
     background-color: transparent;
-    width: 450px;
-    height: auto;
+    width: 35rem;
+    height: 25rem;
     position: absolute;
-    right: 400px;
+    right: -200px;
     top: 0;
-    overflow: hidden;
+    
 }
 
 .image-first,
@@ -181,19 +167,19 @@ span {
 }
 
 .first-row img {
-    width: 20rem;
+    width: 50rem;
 }
 
 .second-row img {
-    width: 30rem;
+    width: 40rem;
 }
 
 .third-row img {
-    width: 30rem;
+    width: 50rem;
 }
 
 .four-row img {
-    width: 30rem;
+    width: 45rem;
 }
 
 
@@ -299,19 +285,157 @@ footer {
     margin-right: 2px;
 }
 
+@media screen and (max-width: 1444px) {
+    .banner .title {
+        right: 20rem;
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+        background-color: transparent;
+    }
+
+}
+
+@media screen and (max-width: 1268px) {
+    .banner .title {
+        right: 18rem;
+    }
+
+    .banner .title p {
+        font-size: 1.3rem;
+    }
+
+    .logo-banner {
+        bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1268px) {
+    .banner .title {
+        right: 15rem;
+    }
+
+    .banner .title p {
+        font-size: 1.1rem;
+    }
+
+    .logo-banner {
+        width: 8rem;
+        bottom: 10px;
+    }
+
+}
+
 @media screen and (max-width: 991px) {
+    .nav a {
+        font-size: 0.8rem;
+    }
+
+    .navbar-brand img {
+        width: 6rem;
+        height: auto;
+    }
+
     .footer-image img {
         height: auto;
     }
 
-    .bar{
+    .bar {
         display: none;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .logo-banner {
+        width: 5rem;
+    }
+
+    .banner .title p {
+        font-size: 1rem;
+    }
+
+    .banner .title {
+        right: 13rem;
+    }
+
+    .retangle {
+        display: none;
+    }
+
+    .services img {
+        width: 12rem;
+    }
+
+
+    .about p {
+        text-align: center;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .about img {
+        width: 35rem;
+        height: 25rem;
+        position: absolute;
+        right: -380px;
+        top: 0;        
+    }
+}
+
+@media screen and (max-width: 846px) {
+    .banner {
+        position: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        align-self: center;
+    }
+
+    .banner .title {
+        position: inherit;
+    }
+
+    .banner .title p {
+        text-align: center;
+        align-self: center;
+        width: 100vw;
+    }
+
+    .banner img.banner-image {
+        width: 70vw;
+    }
+
+    .logo-banner {
+        position: inherit;
     }
 
 }
 
 @media screen and (max-width: 767px) {
-    .container-terms{
+    .container-terms {
         gap: 3rem;
+    }
+
+    .logo img {
+        width: 6rem;
+    }
+
+    .social img {
+        width: 3.5rem;
+    }
+
+    header {
+        display: none;
     }
 }
