@@ -1,16 +1,11 @@
-/* geral */
 * {
-    background-color: #1C1C1C;
     color: white;
     font-family: 'Poppins', sans-serif;
-    border: none;
+    background-color: #1C1C1C;
 }
-
-/*header*/
 
 header {
     padding: 30px 0;
-    background-color: #1C1C1C;
 }
 
 .navbar-brand img {
@@ -29,14 +24,11 @@ header {
     color: #E82E35;
 }
 
-/* main*/
-
 main {
     display: flex;
     flex-direction: column;
     gap: 20rem;
 }
-
 
 .about h2,
 .services h2,
@@ -132,7 +124,7 @@ span {
     position: absolute;
     right: -200px;
     top: 0;
-    
+
 }
 
 .image-first,
@@ -150,7 +142,7 @@ span {
 }
 
 .footer-image img {
-    width: 99vw;
+    width: 100vw;
     height: 50rem;
 }
 
@@ -160,28 +152,35 @@ span {
 
 .services h2 {
     width: 70%;
+    margin-bottom: 10rem;
+}
+
+.services h3 {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.services p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.services p span{
+    font-family: 'Poppins', sans-serif;
 }
 
 .services-container {
     gap: 10rem;
 }
 
-.first-row img {
-    width: 50rem;
-}
-
-.second-row img {
+.first-row img,
+.second-row img,
+.third-row img,
+.four-row img {
     width: 40rem;
 }
-
-.third-row img {
-    width: 50rem;
-}
-
-.four-row img {
-    width: 45rem;
-}
-
 
 .products {
     height: auto;
@@ -204,12 +203,28 @@ span {
     width: 70vw;
     height: 40rem;
     border: 6px solid #454545;
+    padding: 20px 40px;
+    background-image: url("../images/OTAKU.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80%;
 }
 
 .container-products-two {
     width: 70vw;
     height: 40rem;
     border: 6px solid #454545;
+    padding: 20px 40px;
+    background-image: url("../images/GEEK.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80%;
+}
+
+.product-section-one {
+    background-color: transparent;
+    width: 100%;
+    height: 90%;
 }
 
 footer {
@@ -285,6 +300,17 @@ footer {
     margin-right: 2px;
 }
 
+@media screen and (max-width: 1596px) {
+    .about img {
+        width: 25rem;
+    }
+
+    .about .container-about {
+        padding-left: 13rem;
+    }
+
+}
+
 @media screen and (max-width: 1444px) {
     .banner .title {
         right: 20rem;
@@ -297,19 +323,27 @@ footer {
 
 }
 
-@media screen and (max-width: 1268px) {
-    .banner .title {
-        right: 18rem;
+@media screen and (max-width: 1400px) {
+    .services h2 {
+        width: 100%;
     }
 
-    .banner .title p {
-        font-size: 1.3rem;
+    .services img {
+        width: 30rem;
     }
 
-    .logo-banner {
-        bottom: 10px;
+    .services h3 {
+        width: 100%;
+        font-size: 2rem;
     }
 
+    .services p {
+        font-size: 1.5rem;
+    }
+
+    .about .container-about {
+        padding-left: 5rem;
+    }
 }
 
 @media screen and (max-width: 1268px) {
@@ -326,6 +360,25 @@ footer {
         bottom: 10px;
     }
 
+}
+
+@media screen and (max-width: 1199px) {
+    .services h2 {
+        width: 100%;
+    }
+
+    .services img {
+        width: 25rem;
+    }
+
+    .services h3 {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .services p {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -367,23 +420,64 @@ footer {
     }
 
     .services img {
-        width: 12rem;
+        width: 25rem;
+        margin-bottom: 2rem;
     }
 
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .about .container-about {
+        padding-left: 8px;
+    }
 
     .about p {
-        text-align: center;
-        width: 90%;
+        text-align: justify;
+        width: 100%;
         font-size: 1.2rem;
     }
 
     .about img {
-        width: 35rem;
-        height: 25rem;
-        position: absolute;
-        right: -380px;
-        top: 0;        
+        display: none;
     }
+
+    .about .retangle {
+        display: none;
+    }
+
+    .about h2,
+    .services h2,
+    .products h2 {
+        font-size: 2rem;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+        width: 70vw;
+    }
+
+    main {
+        gap: 5rem;
+    }
+
+    .services-container {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .about .container-about {
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+    }
+
+    .about p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
 }
 
 @media screen and (max-width: 846px) {
@@ -437,5 +531,62 @@ footer {
 
     header {
         display: none;
+    }
+
+    .services img {
+        width: 18rem;
+    }
+
+    .about .container-about h2,
+    .products h2 {
+        font-size: 1.8rem;
+    }
+
+    .about .container-about p {
+        font-size: 1.1rem;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+        width: 80vw;
+    }
+
+    .services p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .about .container-about h2,
+    .services h2,
+    .products h2 {
+        font-size: 1.4rem;
+    }
+
+    .about .container-about p {
+        font-size: 1rem;
+    }
+
+    .services h3 {
+        font-size: 1.1rem;
+        width: 85vw;
+    }
+
+    .services img {
+        width: 15rem;
+    }
+
+    .services p {
+        font-size: 0.9rem;
+        width: 80vw;
+    }
+
+    .second-row img,
+    .four-row img {
+        width: 12rem;
     }
 }
