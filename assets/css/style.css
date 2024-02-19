@@ -167,7 +167,7 @@ span {
     width: 100%;
 }
 
-.services p span{
+.services p span {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -187,6 +187,10 @@ span {
     padding: 30px 0;
 }
 
+.products img {
+    background-color: transparent;
+}
+
 .products .retangle {
     background-color: #E82E35;
     height: 20rem;
@@ -199,32 +203,80 @@ span {
     width: 15.8%;
 }
 
+.container-products-one span,
+.container-products-two span {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container-products-one {
     width: 70vw;
     height: 40rem;
     border: 6px solid #454545;
-    padding: 20px 40px;
+    padding: 30px 40px;
     background-image: url("../images/OTAKU.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 80%;
+    position: relative;
 }
+
+.container-products-one img {
+    height: 25rem;
+    width: auto;
+}
+
+.container-products-two img {
+    width: auto;
+    height: 15rem;
+    background-color: transparent;
+}
+
+.container-products-one a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #E82E35;
+}
+
+.container-products-two a {
+    color: #E82E35;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
 
 .container-products-two {
     width: 70vw;
     height: 40rem;
     border: 6px solid #454545;
-    padding: 20px 40px;
+    padding: 30px 40px;
     background-image: url("../images/GEEK.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 80%;
+    position: relative;
 }
 
 .product-section-one {
     background-color: transparent;
     width: 100%;
     height: 90%;
+}
+
+.product-section-two {
+    background-color: transparent;
+    width: 100%;
+    height: 90%;
+}
+
+.product-section-two div {
+    background-color: transparent;
+}
+
+.product-section-two div p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 footer {
