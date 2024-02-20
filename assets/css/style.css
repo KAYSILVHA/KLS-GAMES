@@ -137,7 +137,7 @@ span {
 .image-first img,
 .image-second img,
 .image-third img {
-    width: 99vw;
+    width: 100%;
     height: auto;
 }
 
@@ -185,6 +185,12 @@ span {
 .products {
     height: auto;
     padding: 30px 0;
+    position: relative;
+}
+
+.products p,
+.products span {
+    background-color: transparent;
 }
 
 .products img {
@@ -192,15 +198,21 @@ span {
 }
 
 .products .retangle {
+    position: absolute;
     background-color: #E82E35;
     height: 20rem;
     width: 15%;
+    left: 0;
+    z-index: 0;
 }
 
 .products .retangle-two {
+    position: absolute;
     background-color: #242424;
     height: 20rem;
-    width: 15.8%;
+    width: 15%;
+    right: 0;
+    z-index: 0;
 }
 
 .container-products-one span,
@@ -209,6 +221,7 @@ span {
 }
 
 .container-products-one {
+    z-index: 1;
     width: 70vw;
     height: 40rem;
     border: 6px solid #454545;
@@ -256,6 +269,7 @@ span {
     background-position: center;
     background-size: 100% 80%;
     position: relative;
+    z-index: 1;
 }
 
 .product-section-one {
@@ -352,6 +366,26 @@ footer {
     margin-right: 2px;
 }
 
+@media screen and (max-width: 1700px) {
+
+    .container-products-one img {
+        height: 20rem;
+        width: auto;
+    }
+
+    .container-products-two img {
+        width: auto;
+        height: 12rem;
+    }
+
+    .container-products-one,
+    .container-products-two {
+        height: 30rem;
+        background-size: 100% 50%;
+    }
+
+}
+
 @media screen and (max-width: 1596px) {
     .about img {
         width: 25rem;
@@ -396,6 +430,16 @@ footer {
     .about .container-about {
         padding-left: 5rem;
     }
+
+    .container-products-one img {
+        height: 18rem;
+        width: auto;
+    }
+
+    .container-products-two img {
+        width: auto;
+        height: 10rem;
+    }
 }
 
 @media screen and (max-width: 1268px) {
@@ -431,8 +475,28 @@ footer {
     .services p {
         font-size: 1.2rem;
     }
-}
 
+    .container-products-one img {
+        height: 15rem;
+        width: auto;
+    }
+
+
+    .product-section-two div p{
+        font-size: 0.9rem;
+    }
+
+    .container-products-one a,
+    .container-products-two a{
+        background-color: transparent;
+    }
+
+}
+@media screen and (min-width: 918px){
+    main{
+        border: none;
+    }
+}
 @media screen and (max-width: 991px) {
     .nav a {
         font-size: 0.8rem;
@@ -467,7 +531,8 @@ footer {
         right: 13rem;
     }
 
-    .retangle {
+    .retangle,
+    .retangle-two {
         display: none;
     }
 
@@ -516,6 +581,36 @@ footer {
     .services-container {
         gap: 4rem;
     }
+
+    .container-products-one,
+    .container-products-two {
+        width: 85vw;
+        height: auto;
+        background-image: none;
+    }
+
+    .container-products-one{
+        background-image: url("../images/otaku-mobile.png");
+        background-size: 50% 90%;
+    }
+
+    .container-products-two{
+        background-image: url("../images/geekie-mobile.png");
+        background-size: 50% 90%;
+    }
+
+    .products h4{
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .container-products-one a,
+    .container-products-two a{
+        position: inherit;
+        margin-top: 3rem;
+    }
+
+
 }
 
 @media screen and (max-width: 860px) {
@@ -628,6 +723,14 @@ footer {
         width: 85vw;
     }
 
+    .products h4{
+        font-size: 1rem;
+    }
+
+    .product-section-two div p{
+        font-size: 0.9rem;
+    }
+
     .services img {
         width: 15rem;
     }
@@ -640,5 +743,15 @@ footer {
     .second-row img,
     .four-row img {
         width: 12rem;
+    }
+
+    .container-products-one img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .container-products-two img {
+        height: 9rem;
+        width: auto;
     }
 }
