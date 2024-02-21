@@ -193,6 +193,10 @@ span {
     background-color: transparent;
 }
 
+.products span{
+    font-family: 'Poppins', sans-serif;
+}
+
 .products img {
     background-color: transparent;
 }
@@ -279,6 +283,17 @@ span {
     padding: 30px 40px;
     position: relative;
     z-index: 1;
+    background-image: url("../images/GAMER.png");
+    background-repeat: no-repeat;
+    background-position:  left center;
+    background-size: 60% 40%;
+}
+
+.container-products-three img{
+    position: absolute;
+    width: 40rem;
+    top: 0;
+    left: 40rem;
 }
 
 .container-products-three-one {
@@ -295,6 +310,19 @@ span {
     width: 50%;
     height: 100%;
     border-right: 6px solid #454545;
+}
+
+.container-products-three a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #E82E35;
+}
+
+.container-products-three .text{
+    position: absolute;
+    bottom: 20px;
+    align-self: center;
 }
 
 .container-products-three-two {
