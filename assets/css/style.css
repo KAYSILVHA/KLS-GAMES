@@ -272,6 +272,91 @@ span {
     z-index: 1;
 }
 
+.container-products-three {
+    width: 70vw;
+    height: 45rem;
+    border: 6px solid #454545;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.container-products-three-one {
+    margin: 0;
+    width: 70vw;
+    height: 30rem;
+    border: 6px solid #454545;
+    position: relative;
+    z-index: 1;
+}
+
+.container-products-three-one div:first-child {
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-right: 6px solid #454545;
+}
+
+.container-products-three-two {
+    margin: 0;
+    width: 70vw;
+    height: 30rem;
+    position: relative;
+    z-index: 1;
+    border-right: 6px solid #454545;
+    border-left: 6px solid #454545;
+}
+
+.container-products-three-two div:first-child {
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-right: 6px solid #454545;
+}
+
+
+.container-products-three-three {
+    margin: 0;
+    width: 70vw;
+    height: 40rem;
+    border: 6px solid #454545;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.container-products-three-three img{
+    width: 80%;
+    height: auto;
+}
+
+.container-products-three-three div div{
+    background-color:#E82E35;
+    width: 80%;
+    height: 2px;
+    margin-top: 3rem;
+}
+
+.container-products-three-three span{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-products-three-three a{
+    color: #E82E35;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.products .retangle-three {
+    position: absolute;
+    background-color: #E82E35;
+    height: 85rem;
+    width: 25%;
+    left: 0;
+    z-index: 0;
+}
+
 .product-section-one {
     background-color: transparent;
     width: 100%;
@@ -384,6 +469,10 @@ footer {
         background-size: 100% 50%;
     }
 
+    .container-products-three {
+        height: 40rem;
+    }
+
 }
 
 @media screen and (max-width: 1596px) {
@@ -482,21 +571,17 @@ footer {
     }
 
 
-    .product-section-two div p{
+    .product-section-two div p {
         font-size: 0.9rem;
     }
 
     .container-products-one a,
-    .container-products-two a{
+    .container-products-two a {
         background-color: transparent;
     }
 
 }
-@media screen and (min-width: 918px){
-    main{
-        border: none;
-    }
-}
+
 @media screen and (max-width: 991px) {
     .nav a {
         font-size: 0.8rem;
@@ -532,7 +617,8 @@ footer {
     }
 
     .retangle,
-    .retangle-two {
+    .retangle-two,
+    .retangle-three {
         display: none;
     }
 
@@ -589,23 +675,23 @@ footer {
         background-image: none;
     }
 
-    .container-products-one{
+    .container-products-one {
         background-image: url("../images/otaku-mobile.png");
         background-size: 50% 90%;
     }
 
-    .container-products-two{
+    .container-products-two {
         background-image: url("../images/geekie-mobile.png");
         background-size: 50% 90%;
     }
 
-    .products h4{
+    .products h4 {
         margin-bottom: 3rem;
         font-size: 1.2rem;
     }
 
     .container-products-one a,
-    .container-products-two a{
+    .container-products-two a {
         position: inherit;
         margin-top: 3rem;
     }
@@ -723,11 +809,11 @@ footer {
         width: 85vw;
     }
 
-    .products h4{
+    .products h4 {
         font-size: 1rem;
     }
 
-    .product-section-two div p{
+    .product-section-two div p {
         font-size: 0.9rem;
     }
 
