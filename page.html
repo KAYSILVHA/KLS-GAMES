@@ -38,25 +38,25 @@
                     id="navbarNav w-100">
                     <ul class="nav d-flex flex-row align-items-center justify-content-between w-100">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">INICIO</a>
+                            <a class="nav-link" href="#init">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SOBRE</a>
+                            <a class="nav-link" href="#about">SOBRE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVIÇOS</a>
+                            <a class="nav-link" href="#services">SERVIÇOS</a>
                         </li>
-                        <a class="navbar-brand m-0" href="#">
+                        <a class="navbar-brand m-0" href="/page.html">
                             <img src="./assets/images/logo.png" alt="Logo KLS Games">
                         </a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUTOS</a>
+                            <a class="nav-link" href="#products">PRODUTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ENDEREÇO</a>
+                            <a class="nav-link" href="#adress">ENDEREÇO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATOS</a>
+                            <a class="nav-link" href="#contacts">CONTATOS</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
     </header>
 
     <main class="container-fluid m-0 p-0 w-100">
-        <section class="d-flex banner p-0">
+        <section class="d-flex banner p-0" id="init">
             <img src="./assets/images/banner-image.png" alt="" class="banner-image">
             <div class="title d-flex flex-column align-items-start">
                 <h1>Um novo <span>Universo</span></h1>
@@ -74,7 +74,7 @@
             <img src="./assets/images/logo-banner.png" alt="" class="logo-banner">
         </section>
 
-        <section class="container-fluid about p-0 d-flex align-items-center">
+        <section class="container-fluid about p-0 d-flex align-items-center" id="about">
             <div class="retangle"></div>
             <div
                 class="container align-items-lg-start align-items-center justify-content-lg-start justify-content-center container-about">
@@ -96,7 +96,7 @@
             <img src="./assets/images/image.png" alt="Image Game">
         </section>
 
-        <section class="container-fluid d-flex align-items-center justify-content-center services">
+        <section class="container-fluid d-flex align-items-center justify-content-center services" id="services">
             <section class="container">
                 <h2 class="text-lg-start text-center">Descubra nossos <span>Serviços</span></h2>
                 <div
@@ -163,11 +163,11 @@
         </section>
 
         <section class="container-fluid products p-0">
-            <section class="container products-container d-flex flex-column justify-content-center align-items-center">
+            <section class="container products-container d-flex flex-column justify-content-center align-items-center" id="products">
                 <h2 class="align-self-lg-start align-self-center  text-lg-start text-center mb-5">Nossos
                     <span>Produtos</span>
                 </h2>
-                <section class="d-flex flex-column">
+                <section class="d-flex flex-column products-one">
                     <div class="d-flex align-items-center mt-5">
                         <div class="retangle"></div>
                         <div class="container-products-one">
@@ -188,7 +188,7 @@
                     </div>
                 </section>
 
-                <section class="d-flex flex-column">
+                <section class="d-flex flex-column products-two">
                     <div class="d-flex align-items-center mt-5">
 
                         <div class="container-products-two">
@@ -227,30 +227,82 @@
                     </div>
                 </section>
 
-                <section class="d-flex flex-column align-items-center justify-content-center">
-                    <div class="d-flex flex-column align-items-center mt-5">
+                <section class="d-flex flex-column align-items-center justify-content-center products-three">
+                    <div class="d-flex flex-column align-items-center mt-5 justify-content-center">
                         <div class="container-products-three mb-3 d-flex flex-column">
-                            <h4>TEMOS <span>VÁRIOS</span> ARTIGOS <span>GAMER</span>!</h4>
-                            <div class="w-100 d-flex align-items-center justify-content-center">
+                            <h4 class="">TEMOS <span class="ml-2"> VÁRIOS</span> ARTIGOS <span> GAMER</span>!</h4>
+                            <div class="w-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
                                 <img src="./assets/images/game.png" alt="Controle de vídeo game">
-                                <div class="text text-center d-flex flex-column justify-content-center align-items-center">
+                                <div
+                                    class="text text-center d-flex flex-column justify-content-center align-items-center">
                                     <h3 class="text-one">DESCUBRA O <span>UNIVERSO GAMER</span> AQUI!</p>
                                         <p>V</p>
                                 </div>
                                 <a class="link" href="#">Conheça mais</a>
                             </div>
-
                         </div>
 
-                        <div class="container-products-three-one d-flex">
-                            <div>
+                        <div class="container-products-three-one d-flex flex-lg-row flex-column justify-content-center align-items-center">
+                            <div class="container-one d-flex flex-column justify-content-center align-items-lg-start align-items-center">
+                                <div class="value">
+                                    <h5>A partir de</h5>
+                                    <h4><span>R$39, 99</span></h4>
+                                </div>
+                                <div class="name-product">
+                                    <h3>Mouses</h2>
+                                </div>
+                                <div class="d-flex align-items-center more">
+                                    <img src="./assets/images/more.png" alt="Conheça Mais">
+                                    <a class="m-0"><span>CONHEÇA MAIS MODELOS</span></a>
+                                </div>
+                                <img src="./assets/images/mouse-image.png" alt="Mouse" class="mouse-image">
+                            </div>
+                            <div class="container-two d-flex flex-column justify-content-center">
+                                <div class="value">
+                                    <h5>A partir de</h5>
+                                    <h4><span>R$39, 99</span></h4>
+                                </div>
+                                <div class="name-product">
+                                    <h3>Headsets</h2>
+                                </div>
+                                <div class="d-flex align-items-center more">
+                                    <img src="./assets/images/more.png" alt="Conheça Mais">
+                                    <a class="m-0"><span>CONHEÇA MAIS MODELOS</span></a>
+                                </div>
+                                <img src="./assets/images/headset-image.png" alt="Headsets" class="headset-image">
                             </div>
                             <div>
                             </div>
                         </div>
 
-                        <div class="container-products-three-two d-flex">
-                            <div>
+                        <div class="container-products-three-two flex-lg-row flex-column justify-content-center align-items-center">
+                            <div class="container-three d-flex flex-column justify-content-center">
+                                <div class="value">
+                                    <h5>A partir de</h5>
+                                    <h4><span>R$39, 99</span></h4>
+                                </div>
+                                <div class="name-product">
+                                    <h3>Teclados</h2>
+                                </div>
+                                <div class="d-flex align-items-center more">
+                                    <img src="./assets/images/more.png" alt="Conheça Mais">
+                                    <a class="m-0"><span>CONHEÇA MAIS MODELOS</span></a>
+                                </div>
+                                <img src="./assets/images/keyboard-image.png" alt="Teclado" class="keyboard-image">
+                            </div>
+                            <div class="container-four d-flex flex-column justify-content-center">
+                                <div class="value">
+                                    <h5>A partir de</h5>
+                                    <h4><span>R$39, 99</span></h4>
+                                </div>
+                                <div class="name-product">
+                                    <h3>Mousepads</h2>
+                                </div>
+                                <div class="d-flex align-items-center more">
+                                    <img src="./assets/images/more.png" alt="Conheça Mais">
+                                    <a class="m-0"><span>CONHEÇA MAIS MODELOS</span></a>
+                                </div>
+                                <img src="./assets/images/mousepad-image.png" alt="Mousepads" class="mousepad-image">
                             </div>
                             <div>
                             </div>
@@ -278,7 +330,6 @@
             <img src="./assets/images/new-adventure-image.png" alt="Image Adventure">
         </section>
 
-        <section></section>
     </main>
     <footer class="container-fluid m-0 p-0">
         <section class="footer-image container-fluid d-flex align-items-center p-0 m-0">
@@ -310,11 +361,11 @@
                     <img src="./assets/images/logo-banner.png" alt="">
                 </section>
                 <section
-                    class="adress container d-flex flex-column justify-content-center align-items-center text-center">
+                    class="adress container d-flex flex-column justify-content-center align-items-center text-center" id="adress">
                     <p class="m-1 mb-2">Rua Antônio Felipe, 1084, Centro, Paranavaí - PR, CEP: 87702-010</p>
                     <p>Aberto em horário comercial de segunda a sábado </p>
                 </section>
-                <section class="social container">
+                <section class="social container" id="contacts">
                     <div class="row align-items-center justify-content-center">
                         <img src="./assets/images/linkedin.png" alt="LinkedIn Logo">
                         <img src="./assets/images/face.png" alt="Facebook Logo">

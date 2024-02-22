@@ -188,12 +188,21 @@ span {
     position: relative;
 }
 
+#init,
+#abou,
+#services,
+#products {
+    padding: 40px 0;
+}
+
 .products p,
 .products span {
     background-color: transparent;
 }
 
-.products span{
+.products-one span,
+.products-two span,
+.products-three span {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -285,11 +294,11 @@ span {
     z-index: 1;
     background-image: url("../images/GAMER.png");
     background-repeat: no-repeat;
-    background-position:  left center;
+    background-position: left center;
     background-size: 60% 40%;
 }
 
-.container-products-three img{
+.container-products-three img {
     position: absolute;
     width: 40rem;
     top: 0;
@@ -305,12 +314,98 @@ span {
     z-index: 1;
 }
 
-.container-products-three-one div:first-child {
+.container-products-three-one .container-one {
     margin: 0;
     width: 50%;
     height: 100%;
     border-right: 6px solid #454545;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.container-products-three-one .container-two {
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container-products-three-one .value {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container-products-three-one .value h5 {
+    color: #454545;
+    font-weight: 800;
+}
+
+.container-products-three-one .value h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container-products-three-one .name-product h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.container-products-three-one .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/mouse.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+.container-two .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/HEADSET.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+
+.container-products-three-one .more {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+
+.container-products-three-one .more img {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.container-one .mouse-image {
+    height: 100%;
+    position: absolute;
+    right: -7px;
+}
+
+.container-two .headset-image {
+    height: 100%;
+    position: absolute;
+    right: -5rem;
+}
+
 
 .container-products-three a {
     position: absolute;
@@ -319,7 +414,7 @@ span {
     color: #E82E35;
 }
 
-.container-products-three .text{
+.container-products-three .text {
     position: absolute;
     bottom: 20px;
     align-self: center;
@@ -335,13 +430,95 @@ span {
     border-left: 6px solid #454545;
 }
 
-.container-products-three-two div:first-child {
+.container-products-three-two .container-three {
     margin: 0;
     width: 50%;
     height: 100%;
     border-right: 6px solid #454545;
+    position: relative;
+    overflow: hidden;
 }
 
+
+.container-products-three-two .value {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container-products-three-two .value h5 {
+    color: #454545;
+    font-weight: 800;
+}
+
+.container-products-three-two .value h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container-products-three-two .name-product h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.container-products-three-two .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/KEYBOARD.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+
+.container-four .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/MOUSEPADS.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+.container-three .keyboard-image {
+    height: 100%;
+    position: absolute;
+    right: -2rem;
+    top: 0;
+}
+
+.container-products-three-two .more {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+
+.container-products-three-two .more img {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.container-products-three-two .container-four {
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-four .mousepad-image {
+    height: 90%;
+    position: absolute;
+    right: -5rem;
+    top: 0;
+}
 
 .container-products-three-three {
     margin: 0;
@@ -353,23 +530,23 @@ span {
     z-index: 1;
 }
 
-.container-products-three-three img{
+.container-products-three-three img {
     width: 80%;
     height: auto;
 }
 
-.container-products-three-three div div{
-    background-color:#E82E35;
+.container-products-three-three div div {
+    background-color: #E82E35;
     width: 80%;
     height: 2px;
     margin-top: 3rem;
 }
 
-.container-products-three-three span{
+.container-products-three-three span {
     font-family: 'Poppins', sans-serif;
 }
 
-.container-products-three-three a{
+.container-products-three-three a {
     color: #E82E35;
     position: absolute;
     bottom: 20px;
@@ -404,6 +581,11 @@ span {
 .product-section-two div p {
     margin-top: 1rem;
     font-size: 1.2rem;
+}
+
+.container-products-three-one a,
+.container-products-three-two a {
+    text-decoration: none;
 }
 
 footer {
@@ -479,8 +661,32 @@ footer {
     margin-right: 2px;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1800px) {
+    .container-products-three {
+        height: 35rem;
+    }
 
+    .container-products-three img {
+        width: 32rem;
+    }
+
+    .container-products-three-one,
+    .container-products-three-two {
+        height: 25rem;
+    }
+
+    .container-products-three-one .more,
+    .container-products-three-two .more {
+        bottom: 30px;
+    }
+
+    .container-products-three-one .name-product,
+    .container-products-three-two .name-product {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
     .container-products-one img {
         height: 20rem;
         width: auto;
@@ -497,9 +703,33 @@ footer {
         background-size: 100% 50%;
     }
 
-    .container-products-three {
-        height: 40rem;
+    .container-products-three-one .value h4,
+    .container-products-three-two .value h4 {
+        font-size: 2rem;
     }
+
+    .container-products-three-one .name-product h3,
+    .container-products-three-two .name-product h3 {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 1630px) {
+    .container-products-three {
+        background-size: 70% 40%;
+        height: 30rem;
+    }
+
+    .container-products-three img {
+        width: 28rem;
+        left: 35rem;
+    }
+
+    .container-products-three h3 {
+        font-size: 1.6rem;
+    }
+
 
 }
 
@@ -724,7 +954,125 @@ footer {
         margin-top: 3rem;
     }
 
+    .container-products-three {
+        width: 85vw;
+        height: auto;
+        background-image: none;
 
+    }
+
+    .container-products-three h4 {
+        align-self: center;
+        text-align: center;
+    }
+
+    .container-products-three .text {
+        width: 100%;
+        position: inherit;
+        display: flex;
+    }
+
+    .container-products-three img {
+        position: relative;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        width: 20rem;
+        margin-bottom: 20px;
+    }
+
+    .container-products-three a {
+        position: inherit;
+    }
+
+    .container-products-three h3 {
+        font-size: 1.3rem;
+    }
+
+    .container-products-three-one,
+    .container-products-three-two {
+        width: 85vw;
+        height: auto;
+    }
+
+    .container-products-three-one .container-one,
+    .container-products-three-one .container-two,
+    .container-products-three-two .container-three,
+    .container-products-three-two .container-four {
+        width: 100%;
+        height: auto;
+        border: 0;
+    }
+
+    .container-products-three-one .container-one,
+    .container-products-three-two .container-three {
+        border-bottom: 6px solid #454545;
+        position: inherit;
+        padding: 30px 0 50px;
+    }
+
+    .container-products-three-one .container-two,
+    .container-products-three-two .container-four {
+        position: inherit;
+        padding: 30px 0 50px;
+    }
+
+    .container-products-three-one .value,
+    .container-products-three-one .name-product,
+    .container-products-three-two .value,
+    .container-products-three-two .name-product {
+        position: inherit;
+        background-image: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .container-products-three-one .more,
+    .container-products-three-two .more {
+        position: inherit;
+        background-image: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .container-one .mouse-image,
+    .container-two .headset-image,
+    .container-three .keyboard-image,
+    .container-four .mousepad-image {
+        display: none;
+    }
+
+    .container-products-three-one .name-product h3,
+    .container-products-three-two .name-product h3 {
+        position: inherit;
+        bottom: 0;
+        left: 0;
+    }
+
+    .container-products-three-three {
+        width: 85vw;
+        height: auto;
+    }
+
+    .container-products-three-three a {
+        position: inherit;
+        margin-top: 2rem;
+    }
+
+    .container-products-three-three h4{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -815,6 +1163,31 @@ footer {
     .services p {
         font-size: 1.1rem;
     }
+
+    .container-products-three img {
+        width: 15rem;
+    }
+
+    .container-products-three h4 {
+        font-size: 1rem;
+    }
+
+    .container-products-three h3 {
+        font-size: 1.1rem;
+    }
+
+    .container-products-three-one .name-product h3,
+    .container-products-three-two .name-product h3 {
+        font-size: 2rem;
+    }
+
+    .container-products-three-one a,
+    .container-products-three-two a {
+        font-size: 0.9rem;
+    }
+
+
+
 }
 
 @media screen and (max-width: 500px) {
