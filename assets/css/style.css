@@ -1,20 +1,9 @@
 /* PARA ACABAR 
-
-    - AJUSTAR ESPAÇAMENTOS
-    - PASSAR PARA OUTRA PASTA E VER O MOTIVO DAS BORDAS
-    - ORGANIZAR O CÓDIGO
-    - QUALIDADE DAS IMAGENS
     - MELHORAR A PARTE DOS PRODUTOS PARA MOBILE
-    - ADICIONAR ALGUMAS ANIMAÇÕES
     - DIRECIONAR OS LINKS
     - MENSAGENS PADRÃO DOS LINKS
-    - BOOT PRA WHATSAPP(PESQUISAR)
-    - ALT DAS IMAGENS
     - AJUSTAR OS PREÇOS DOS PRODUTOS
-    -
-    
 */
-
 
 * {
     color: white;
@@ -60,7 +49,14 @@ span {
     font-family: 'Press Start 2P', system-ui;
 }
 
+#init,
+#about,
+#services,
+#products {
+    padding: 40px 0;
+}
 
+/*banner*/
 .banner {
     height: auto;
     margin: 5rem 0;
@@ -114,6 +110,7 @@ span {
     bottom: 50px;
 }
 
+/*about*/
 
 .about {
     height: auto;
@@ -142,14 +139,19 @@ span {
     position: absolute;
     right: -200px;
     top: 0;
-
 }
 
+
+/*imagem decoração main*/
 .image-first,
 .image-second,
 .image-third,
 .footer-image {
     height: auto;
+}
+
+.image-third {
+    margin-bottom: 30rem;
 }
 
 .image-first img,
@@ -163,6 +165,8 @@ span {
     width: 100vw;
     height: 50rem;
 }
+
+/*serviços*/
 
 .services {
     height: auto;
@@ -200,17 +204,12 @@ span {
     width: 40rem;
 }
 
+/*produtos*/
+
 .products {
     height: auto;
     padding: 30px 0;
     position: relative;
-}
-
-#init,
-#abou,
-#services,
-#products {
-    padding: 40px 0;
 }
 
 .products p,
@@ -269,17 +268,17 @@ span {
     width: auto;
 }
 
-.container-products-two img {
-    width: auto;
-    height: 15rem;
-    background-color: transparent;
-}
-
 .container-products-one a {
     position: absolute;
     bottom: 20px;
     right: 20px;
     color: #E82E35;
+}
+
+.container-products-two img {
+    width: auto;
+    height: 15rem;
+    background-color: transparent;
 }
 
 .container-products-two a {
@@ -288,7 +287,6 @@ span {
     bottom: 20px;
     right: 20px;
 }
-
 
 .container-products-two {
     width: 70vw;
@@ -316,6 +314,19 @@ span {
     background-size: 60% 40%;
 }
 
+.container-products-three a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #E82E35;
+}
+
+.container-products-three .text {
+    position: absolute;
+    bottom: 20px;
+    align-self: center;
+}
+
 .container-products-three img {
     position: absolute;
     width: 40rem;
@@ -332,6 +343,11 @@ span {
     z-index: 1;
 }
 
+.container-products-three-one a,
+.container-products-three-two a {
+    text-decoration: none;
+}
+
 .container-products-three-one .container-one {
     margin: 0;
     width: 50%;
@@ -344,7 +360,6 @@ span {
     justify-content: center;
 }
 
-
 .container-products-three-one .container-two {
     margin: 0;
     width: 50%;
@@ -352,7 +367,6 @@ span {
     position: relative;
     overflow: hidden;
 }
-
 
 .container-products-three-one .value {
     position: absolute;
@@ -389,17 +403,6 @@ span {
     position: relative;
 }
 
-.container-two .name-product {
-    width: 100%;
-    height: 200px;
-    background-image: url("../images/HEADSET.png");
-    background-size: 80% 70%;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-}
-
-
 .container-products-three-one .more {
     position: absolute;
     bottom: 80px;
@@ -418,24 +421,20 @@ span {
     right: -7px;
 }
 
+.container-two .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/HEADSET.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
 .container-two .headset-image {
     height: 100%;
     position: absolute;
     right: -5rem;
-}
-
-
-.container-products-three a {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    color: #E82E35;
-}
-
-.container-products-three .text {
-    position: absolute;
-    bottom: 20px;
-    align-self: center;
 }
 
 .container-products-three-two {
@@ -457,11 +456,27 @@ span {
     overflow: hidden;
 }
 
+.container-three .keyboard-image {
+    height: 100%;
+    position: absolute;
+    right: -2rem;
+    top: 0;
+}
 
 .container-products-three-two .value {
     position: absolute;
     top: 40px;
     left: 40px;
+}
+
+.container-products-three-two .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/KEYBOARD.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
 }
 
 .container-products-three-two .value h5 {
@@ -483,34 +498,6 @@ span {
     background-color: transparent;
 }
 
-.container-products-three-two .name-product {
-    width: 100%;
-    height: 200px;
-    background-image: url("../images/KEYBOARD.png");
-    background-size: 80% 70%;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-}
-
-
-.container-four .name-product {
-    width: 100%;
-    height: 200px;
-    background-image: url("../images/MOUSEPADS.png");
-    background-size: 80% 70%;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-}
-
-.container-three .keyboard-image {
-    height: 100%;
-    position: absolute;
-    right: -2rem;
-    top: 0;
-}
-
 .container-products-three-two .more {
     position: absolute;
     bottom: 80px;
@@ -523,12 +510,24 @@ span {
     margin-right: 1rem;
 }
 
+
 .container-products-three-two .container-four {
     margin: 0;
     width: 50%;
     height: 100%;
     position: relative;
     overflow: hidden;
+    z-index: 0;
+}
+
+.container-four .name-product {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/MOUSEPADS.png");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
 }
 
 .container-four .mousepad-image {
@@ -536,6 +535,7 @@ span {
     position: absolute;
     right: -5rem;
     top: 0;
+    z-index: 1;
 }
 
 .container-products-three-three {
@@ -601,10 +601,7 @@ span {
     font-size: 1.2rem;
 }
 
-.container-products-three-one a,
-.container-products-three-two a {
-    text-decoration: none;
-}
+/*footer*/
 
 footer {
     height: auto;
@@ -660,7 +657,6 @@ footer {
     margin-bottom: 5rem;
 }
 
-
 .whaterMark img {
     width: 2rem;
 }
@@ -678,6 +674,8 @@ footer {
     font-weight: normal;
     margin-right: 2px;
 }
+
+/*media queries*/
 
 @media screen and (max-width: 1800px) {
     .container-products-three {
@@ -859,6 +857,10 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    #init {
+        margin-bottom: 0;
+    }
+
     .nav a {
         font-size: 0.8rem;
     }
@@ -937,11 +939,15 @@ footer {
     }
 
     main {
-        gap: 5rem;
+        gap: 6rem;
     }
 
     .services-container {
-        gap: 4rem;
+        gap: 5rem;
+    }
+
+    .image-third {
+        margin-bottom: 8rem;
     }
 
     .container-products-one,
@@ -1088,7 +1094,7 @@ footer {
         margin-top: 2rem;
     }
 
-    .container-products-three-three h4{
+    .container-products-three-three h4 {
         text-align: center;
     }
 }
@@ -1146,6 +1152,14 @@ footer {
 @media screen and (max-width: 767px) {
     .container-terms {
         gap: 3rem;
+    }
+
+    .container-products-three-three{
+        padding: 20px;
+    }
+
+    .container-products-three-three img {
+        width: 90%;
     }
 
     .logo img {
