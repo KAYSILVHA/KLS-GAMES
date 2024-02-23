@@ -1,5 +1,4 @@
 /* PARA ACABAR 
-    - MELHORAR A PARTE DOS PRODUTOS PARA MOBILE
     - DIRECIONAR OS LINKS
     - MENSAGENS PADRÃO DOS LINKS
     - AJUSTAR OS PREÇOS DOS PRODUTOS
@@ -857,6 +856,54 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .container-one .image-mobile {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url("../images/image-mouse-mobile.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    .container-two .image-mobile {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url("../images/image-headset-mobile.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    .container-three .image-mobile {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url("../images/image-keyboard-mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    .container-four .image-mobile {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url("../images/image-mousepad-mobile.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
     #init {
         margin-bottom: 0;
     }
@@ -1055,6 +1102,12 @@ footer {
         width: 100%;
         bottom: 0;
         left: 0;
+        background-color: transparent;
+    }
+
+    .container-products-three-one .name-product,
+    .container-products-three-two .name-product {
+        height: auto;
     }
 
     .container-products-three-one .more,
@@ -1070,6 +1123,19 @@ footer {
         left: 0;
     }
 
+
+    .container-products-three-one .value h5,
+    .container-products-three-two .value h5 {
+        color: white;
+        background-color: transparent;
+        margin-bottom: 0.5rem;
+    }
+
+    .container-products-three-one .value h4,
+    .container-products-three-two .value h4 {
+        background-color: transparent;
+    }
+
     .container-one .mouse-image,
     .container-two .headset-image,
     .container-three .keyboard-image,
@@ -1082,6 +1148,8 @@ footer {
         position: inherit;
         bottom: 0;
         left: 0;
+        background-color: transparent;
+        margin-top: 2rem;
     }
 
     .container-products-three-three {
@@ -1097,6 +1165,12 @@ footer {
     .container-products-three-three h4 {
         text-align: center;
     }
+
+    .container-products-three-one .name-product h3,
+    .container-products-three-two .name-product h3 {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 860px) {
@@ -1154,7 +1228,7 @@ footer {
         gap: 3rem;
     }
 
-    .container-products-three-three{
+    .container-products-three-three {
         padding: 20px;
     }
 
@@ -1210,7 +1284,7 @@ footer {
 
     .container-products-three-one .name-product h3,
     .container-products-three-two .name-product h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .container-products-three-one a,
@@ -1218,6 +1292,26 @@ footer {
         font-size: 0.9rem;
     }
 
+    .container-products-three-one .value h5,
+    .container-products-three-two .value h5 {
+        font-size: 1rem;
+    }
+
+    .container-products-three-one .value span,
+    .container-products-three-two .value span {
+        font-size: 1.2rem;
+    }
+
+    .container-products-three-one .more a span,
+    .container-products-three-two .more a span {
+        font-size: 0.9rem;
+    }
+
+    .container-products-three-one .more img,
+    .container-products-three-two .more img {
+        width: 1.3rem;
+        margin-right: 10px;
+    }
 
 
 }
