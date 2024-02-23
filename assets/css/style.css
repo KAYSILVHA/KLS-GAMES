@@ -616,6 +616,10 @@ footer {
     color: #444343;
 }
 
+.terms a {
+   text-decoration: none;
+}
+
 .adress p {
     font-size: 0.9rem;
 }
@@ -637,9 +641,12 @@ footer {
 .social {
     margin-top: 2rem;
 }
+.social div{
+    gap: 15px
+}
 
-.social img {
-    width: 4rem;
+.social a img {
+    width: 3.6rem;
 }
 
 .copyright {
@@ -1240,7 +1247,7 @@ footer {
         width: 6rem;
     }
 
-    .social img {
+    .social a img {
         width: 3.5rem;
     }
 
@@ -1317,6 +1324,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .copyright p {
+        text-align: center;
+    }
+
+    .social a img {
+        width: 2.5rem;
+    }
+
     .banner h1 {
         font-size: 2rem;
     }
