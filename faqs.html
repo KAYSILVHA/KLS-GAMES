@@ -7,75 +7,189 @@
     <title>FAQ - KLS Games</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/footerStyle.css">
+    <link rel="stylesheet" href="./assets/css/headerStyle.css">
+
 </head>
 
-<body>
-    <div class="container py-5">
-        <h1 class="text-center mb-5">Perguntas Frequentes</h1>
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Como posso entrar em contato?
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        Você pode entrar em contato conosco pelo telefone (XX) XXXX-XXXX ou pelo email contato@klsgames.com.br.
+<body style="background-color: black;">
+    <header class="container-fluid m-0 bg-dark">
+        <nav class="bg-transparent navbar navbar-expand-md navbar-dark bg-dark container">
+            <a class="navbar-brand bg-transparent" href="#">
+                <img class="bg-transparent" src="./assets/images/logo.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler border-0 bg-transparent" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-transparent"></span>
+            </button>
+            <div class="bg-transparent collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav bg-transparent">
+                    <li class="nav-item me-sm-3 me-0 speak bg-transparent">
+                        <a class="nav-link"
+                            href="https://api.whatsapp.com/send?phone=5544999097007&text=Olá!%20Te%20encontrei%20pelo%20site.%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20KLS%20games."
+                            target="_blank" style="color: #E82E35;">FALE CONOSCO</a>
+                    </li>
+                    <li class="nav-item back">
+                        <a class="nav-link text-white" href="./page.html">&larr; Voltar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="text-white">
+        <div class="container py-5 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-center mb-5">Perguntas Frequentes</h1>
+            <div id="accordion">
+                <div class="card bg-dark mb-3">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Como posso entrar em contato?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Você pode entrar em contato conosco pelo telefone <a
+                                href="https://api.whatsapp.com/send?phone=5544999097007&text=Olá!%20Te%20encontrei%20pelo%20site.%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20KLS%20games."
+                                target="_blank" style="color: #E82E35;">(44) 99909-7007</a> ou pelo email <a
+                                href="mailto:klsgamess@hotmail.com" style="color: #E82E35;"
+                                target="_blank">klsgamess@hotmail.com</a>.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Onde estamos localizados?
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        Nossa loja está localizada na Rua XYZ, nº 123, na cidade de ABC.
+                <div class="card bg-dark mb-3">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-light" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Onde estamos localizados?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Nossa loja está localizada na <a href="https://maps.app.goo.gl/8cYDEJYH9oRjQ1nD9"
+                                style="color: #E82E35;" target="_blank">Rua Antônio Felipe, 1084, Centro,Paranavaí - PR,
+                                CEP: 87702-010</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Quais são nossos serviços?
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        Oferecemos serviços de venda de jogos, consoles, acessórios e assistência técnica especializada.
+                <div class="card bg-dark mb-3">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-light" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Quais são nossos serviços?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Oferecemos serviços de venda de jogos, consoles, acessórios e assistência técnica
+                            especializada.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Quais são nossos produtos?
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                    <div class="card-body">
-                        Trabalhamos com uma ampla variedade de jogos para diversas plataformas, consoles de última geração e acessórios gamer.
+                <div class="card bg-dark mb-3">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-light" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Quais são nossos produtos?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Trabalhamos com uma ampla variedade de jogos para diversas plataformas, consoles de última
+                            geração e acessórios gamer.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+    <footer class="container-fluid p-0">
+        <section class="container-fluid d-flex p-0">
+            <section class="bar m-0">
+            </section>
+            <section
+                class="terms container-lg container-md-fluid d-flex flex-column justify-content-center align-items-center">
+                <section
+                    class="container-lg container-md-fluid d-flex flex-md-row flex-column justify-content-md-around justify-content-center align-items-md-start align-items-center p-5 container-terms">
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Legal</h4>
+                        <a href="./privacy.html" target="_blank">
+                            <p class="m-0 mb-2">Política de Privacidade</p>
+                        </a>
+                        <a href="./privacy.html" target="_blank">
+                            <p>Termos de Uso</p>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Suporte</h4>
+                        <a href="./faqs.html" target="_blank">
+                            <p class="m-0 mb-2">FAQ</p>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5544999097007" target="_blank">
+                            <p>Fale conosco</p>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column align-items-md-start align-items-center mb-sm-5 text-center">
+                        <h4 class="mb-4">Sobre nós</h4>
+                        <a href="https://www.apontador.com.br/local/pr/paranavai/eletroeletronicos/RV559S26/kls_games.html"
+                            target="_blank">
+                            <p class="m-0 mb-2">Informações da Empresa</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="logo container d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/logo-banner.png" alt="KLS Logo">
+                </section>
+                <section
+                    class="adress container d-flex flex-column justify-content-center align-items-center text-center"
+                    id="adress">
+                    <p class="m-1 mb-2">Rua Antônio Felipe, 1084, Centro, Paranavaí - PR, CEP: 87702-010</p>
+                    <p>Aberto em horário comercial de segunda a sábado </p>
+                </section>
+                <section class="social container" id="contacts">
+                    <div class="w-100 d-flex align-items-center justify-content-center">
+                        <a href="https://www.facebook.com/klsgs/" target="_blank"><img src="./assets/images/face.png"
+                                alt="Facebook Logo"></a>
+                        <a href="https://www.instagram.com/klsgamess/?hl=pt" target="_blank"><img
+                                src="./assets/images/insta.png" alt="Instagram Logo"></a>
+                        <a href="" target="_blank"><img src="./assets/images/youtube.png" alt="Youtube Logo"></a>
+                        <a href="" target="_blank"><img src="./assets/images/twiter.png" alt="Twitter Logo"></a>
+                        <a href="mailto:klsgamess@hotmail.com" target="_blank"><img src="./assets/images/email.png"
+                                alt="Email Logo"></a>
+                    </div>
+                </section>
+                <section class="copyright container-fluid d-flex align-items-center justify-content-center">
+                    <p>© 2024 KLS Games, Todos os Direitos Reservados</p>
+                </section>
+                <section class="whaterMark container-fluid d-flex align-items-center justify-content-center">
+                    <a class="d-flex align-items-center" href="https://github.com/KAYSILVHA" target="_blank">
+                        <p class="m-0">Create <strong>BY</strong> <span>Me</span></p>
+                        <img src="./assets/images/waterMark-image.png" alt="WhaterMark Imagem">
+                    </a>
+                </section>
+            </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

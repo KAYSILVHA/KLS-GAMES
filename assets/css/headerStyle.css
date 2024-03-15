@@ -1,0 +1,56 @@
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+    width: 8rem;
+    height: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.speak {
+    border: 1px solid #E82E35;
+    padding: 0 10px
+}
+
+.speak a {
+    color: #E82E35;
+}
+
+.back {
+    background-color: #E82E35;
+    font-weight: 700;
+    padding: 0 10px
+}
+
+.back a {
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-brand img {
+        width: 5rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        margin-top: 30px;
+        border-top: 1px solid #ffffff30;
+        background-color: black;
+    }
+
+    .speak {
+        margin-top: 10px;
+        max-width: 150px;
+        border: none;
+    }
+
+    .back {
+        max-width: 150px;
+        background-color: transparent;
+    }
+}
