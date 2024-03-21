@@ -1,0 +1,102 @@
+main {
+    background-color: #1C1C1C;
+    width: 100vw;
+}
+
+.banner {
+    height: 70vh;
+}
+
+.banner-social img {
+    height: 35px;
+    margin-bottom: 2rem;
+}
+
+.banner button {
+    background-color: #E82E35;
+}
+
+.banner button:hover {
+    background-color: #E82E3550;
+}
+
+.banner .center img {
+    width: 30rem;
+}
+
+.product {
+    border: 4px solid #454545;
+    background-color: #1C1C1C;
+    height: 450px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.value {
+    position: absolute;
+    top: 20px;
+}
+
+.value h5 {
+    color: #454545;
+    font-weight: 800;
+}
+
+.value h4 span {
+    color: #E82E35;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.name-product h3 {
+    font-size: 2.5rem;
+    width: 60%;
+}
+
+.more {
+    position: absolute;
+    bottom: 20px;
+}
+
+.more a {
+    text-decoration: none;
+}
+
+.more a span {
+    color: #E82E35;
+}
+
+.more a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .product {
+        margin-bottom: 20px;
+    }
+
+    .banner .center img {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner .center img {
+        width: 15rem;
+    }
+
+    .banner-social {
+        gap: 15px;
+    }
+
+    .banner-social img {
+        height: 25px;
+        margin-top: 3rem;
+    }
+}
