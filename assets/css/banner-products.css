@@ -71,6 +71,28 @@ main {
     margin-right: 10px;
 }
 
+ul.dropdown-menu{
+    background-color: #1E1E1E;
+    border: 3px solid #454545;
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    text-align: justify;
+}
+
+ul.dropdown-menu span{
+    color: #E82E35;
+}
+
+ul.dropdown-menu h5{
+    color: #E82E35;
+    font-size: 1rem;
+}
+
+ul.dropdown-menu p{
+    color: #454545;
+    font-size: 0.8rem;
+}
 
 @media screen and (max-width: 991px) {
     .product {
