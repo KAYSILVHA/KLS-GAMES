@@ -13,6 +13,7 @@ header {
     height: auto;
     text-align: center;
     align-self: center;
+    margin-right: 3rem;
 }
 
 .nav a {
@@ -27,7 +28,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 20rem;
 }
 
 .about h2,
@@ -49,47 +49,60 @@ span {
     padding: 40px 0;
 }
 
+.search-container{
+    margin-top: 5rem;
+}
+
+span.input-group-text{
+    background-color: #232323;
+    border: 2px solid #E82E35;
+    font-size: 1.5rem;
+}
+
+span.input-group-text i{
+    color: #E82E35;
+}
+
+.search-container input{
+    background-color: #232323;
+    padding: 10px 20px;
+    border: 2px solid #E82E35;
+    color: #E82E35;
+}
+
+.search-container input:focus{
+    background-color: #232323;
+    padding: 10px 20px;
+    border: 2px solid #E82E35;
+    color: #E82E35;
+}
+
+.search-container input::placeholder{
+    color: #E82E35;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
 /*banner*/
 .banner {
     height: auto;
-    margin: 5rem 0;
     position: relative;
     align-items: flex-start;
+    margin: 10rem 0;
 }
 
-.banner img.banner-image {
-    width: 60vw;
-    height: auto;
-    z-index: 1;
-}
-
-.banner .title {
-    position: absolute;
-    right: 23rem;
-    z-index: 100;
-    top: 75px;
-    background-color: transparent;
-    width: 30vw;
-}
 
 .banner h1 {
     font-size: 5rem;
     background-color: transparent;
+    margin-top: 5rem;
+    width: 80vw;
 }
 
 .banner h1 span {
     background-color: transparent;
-}
-
-.banner .title p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    background-color: transparent;
-}
-
-.banner .title p span {
-    font-family: 'Poppins', sans-serif;
 }
 
 span {
@@ -97,18 +110,21 @@ span {
 }
 
 .logo-banner {
-    width: 10rem;
-    position: absolute;
-    right: 80px;
-    bottom: 50px;
+    width: 25rem;
 }
+
+/*carousel*/
+
+/* .carousel {
+    height: 100vh;
+} */
 
 /*about*/
 
 .about {
     height: auto;
     position: relative;
-    margin: 20px 0;
+    margin: 10rem 0;
     overflow-x: hidden;
 }
 
@@ -163,6 +179,7 @@ span {
 
 .services {
     height: auto;
+    margin: 10rem 0;
 }
 
 .services img:hover {
@@ -220,6 +237,7 @@ span {
     height: auto;
     padding: 30px 0;
     position: relative;
+    margin: 10rem 0;
 }
 
 .products p,
@@ -749,10 +767,6 @@ footer {
 }
 
 @media screen and (max-width: 1444px) {
-    .banner .title {
-        right: 20rem;
-    }
-
     .banner h1 {
         font-size: 4rem;
         background-color: transparent;
@@ -801,17 +815,9 @@ footer {
 }
 
 @media screen and (max-width: 1268px) {
-    .banner .title {
-        right: 15rem;
-    }
-
-    .banner .title p {
-        font-size: 1.1rem;
-    }
 
     .logo-banner {
-        width: 8rem;
-        bottom: 10px;
+        width: 20rem;
     }
 
 }
@@ -933,15 +939,7 @@ footer {
     }
 
     .logo-banner {
-        width: 5rem;
-    }
-
-    .banner .title p {
-        font-size: 1rem;
-    }
-
-    .banner .title {
-        right: 13rem;
+        width: 15rem;
     }
 
     .retangle,
@@ -1192,24 +1190,6 @@ footer {
         align-self: center;
     }
 
-    .banner .title {
-        position: inherit;
-    }
-
-    .banner .title p {
-        text-align: center;
-        align-self: center;
-        width: 100vw;
-    }
-
-    .banner img.banner-image {
-        width: 70vw;
-    }
-
-    .logo-banner {
-        position: inherit;
-    }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -1233,9 +1213,9 @@ footer {
         width: 3.5rem;
     }
 
-    header {
+    /* header {
         display: none;
-    }
+    } */
 
     .services img {
         width: 18rem;
