@@ -16,7 +16,7 @@ header {
     margin-right: 3rem;
 }
 
-navbar-nav a {
+.navbar-nav a {
     color: white;
     font-weight: 700;
 }
@@ -98,9 +98,8 @@ span.input-group-text i {
     margin: 10rem 0;
 }
 
-
 .banner h1 {
-    font-size: 5rem;
+    font-size: rem;
     background-color: transparent;
     margin-top: 5rem;
     width: 80vw;
@@ -115,7 +114,7 @@ span {
 }
 
 .logo-banner {
-    width: 25rem;
+    width: 20rem;
 }
 
 /*carousel*/
@@ -124,12 +123,43 @@ span {
     height: 100vh;
 } */
 
+/*technical-assistance*/
+
+.technical-assistance {
+    height: auto;
+    position: relative;
+    margin: 10rem 0;
+    overflow-x: hidden;
+}
+
+.technical-assistance h2 {
+    width: 70%;
+}
+
+.technical-assistance p {
+    text-align: justify;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.technical-assistance button {
+    background-color: #E82E35;
+    padding: 10px 30px;
+    color: white;
+    border: 0;
+    font-weight: 600;
+}
+
+.assistance-image {
+    width: 25rem;
+}
+
 /*about*/
 
 .about {
     height: auto;
     position: relative;
-    margin: 10rem 0;
+    padding: 20rem 0;
     overflow-x: hidden;
 }
 
@@ -155,17 +185,6 @@ span {
     top: 0;
 }
 
-.technical-assistance {
-    height: auto;
-    position: relative;
-    margin: 10rem 0;
-    overflow-x: hidden;
-}
-
-.assistance-image{
-    width: 30rem;
-}
-
 
 /*imagem decoração main*/
 .image-first,
@@ -173,6 +192,7 @@ span {
 .image-third,
 .footer-image {
     height: auto;
+    overflow: hidden;
 }
 
 .image-third {
@@ -233,7 +253,7 @@ span {
 .second-row img,
 .third-row img,
 .four-row img {
-    width: 40rem;
+    width: 35rem;
 }
 
 /*produtos*/
@@ -881,6 +901,18 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .search-container {
+        margin-top: 2rem;
+    }
+
+    .technical-assistance h2 {
+        width: 80vw;
+    }
+    
+    .technical-assistance p {
+        width: 80vw;
+    }
+
     .container-one .image-mobile {
         height: 150px;
         width: 100%;
@@ -1292,6 +1324,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .technical-assistance,
+    .banner,
+    .about,
+    .services,
+    .products {
+        margin: 5rem 0;
+    }
+
     .copyright p {
         text-align: center;
     }
