@@ -16,12 +16,12 @@ header {
     margin-right: 3rem;
 }
 
-.nav a {
+navbar-nav a {
     color: white;
     font-weight: 700;
 }
 
-.nav a:hover {
+.navbar-nav a:hover {
     color: #E82E35;
 }
 
@@ -49,41 +49,46 @@ span {
     padding: 40px 0;
 }
 
-.search-container{
+.search-container {
     margin-top: 5rem;
 }
 
-span.input-group-text{
+span.input-group-text {
     background-color: #232323;
     border: 2px solid #E82E35;
     font-size: 1.5rem;
 }
 
-span.input-group-text i{
+span.input-group-text i {
     color: #E82E35;
 }
 
-.search-container input{
+.search-container input {
     background-color: #232323;
     padding: 10px 20px;
     border: 2px solid #E82E35;
     color: #E82E35;
 }
 
-.search-container input:focus{
+.search-container input:focus {
     background-color: #232323;
     padding: 10px 20px;
     border: 2px solid #E82E35;
     color: #E82E35;
 }
 
-.search-container input::placeholder{
+.search-container input::placeholder {
     color: #E82E35;
 }
 
 .highlight {
     background-color: yellow;
 }
+
+.navbar-nav a.nav-link.active {
+    color: #E82E35;
+}
+
 
 /*banner*/
 .banner {
@@ -148,6 +153,17 @@ span {
     position: absolute;
     right: -200px;
     top: 0;
+}
+
+.technical-assistance {
+    height: auto;
+    position: relative;
+    margin: 10rem 0;
+    overflow-x: hidden;
+}
+
+.assistance-image{
+    width: 30rem;
 }
 
 
