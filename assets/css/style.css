@@ -648,8 +648,35 @@ span {
 }
 
 
+/*Carousel*/
+/* @media (min-width: 768px) {
+    .carousel .carousel-item {
+        display: none;
+        transition: transform 0.6s ease-in-out;
+    }
 
-/*footer*/
+    .carousel .carousel-item.active {
+        display: flex;
+    }
+
+    .carousel .carousel-item-next, .carousel .carousel-item-prev {
+        display: flex;
+    }
+} */
+
+
+.carousel #carouselProducts .carousel-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    width: 100%;
+} 
+
+/*Footer*/
 
 footer {
     height: auto;
