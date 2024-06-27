@@ -1,8 +1,38 @@
+/*Geral*/
+
 * {
     color: white;
     font-family: 'Poppins', sans-serif;
+}
+
+.body {
     background-color: #1C1C1C;
 }
+
+main {
+    background-color: #1C1C1C;
+}
+
+.about h2,
+.services h2,
+.products h2 {
+    font-size: 3rem;
+}
+
+h1,
+h2,
+span {
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#init,
+#about,
+#services,
+#products {
+    padding: 40px 0;
+}
+
+/*Header*/
 
 header {
     padding: 30px 0;
@@ -23,30 +53,6 @@ header {
 
 .navbar-nav a:hover {
     color: #E82E35;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.about h2,
-.services h2,
-.products h2 {
-    font-size: 3rem;
-}
-
-h1,
-h2,
-span {
-    font-family: 'Press Start 2P', system-ui;
-}
-
-#init,
-#about,
-#services,
-#products {
-    padding: 40px 0;
 }
 
 .search-container {
@@ -82,7 +88,7 @@ span.input-group-text i {
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: rgb(80, 0, 11);
 }
 
 .navbar-nav a.nav-link.active {
@@ -90,7 +96,7 @@ span.input-group-text i {
 }
 
 
-/*banner*/
+/*Banner*/
 .banner {
     height: auto;
     position: relative;
@@ -100,13 +106,8 @@ span.input-group-text i {
 
 .banner h1 {
     font-size: rem;
-    background-color: transparent;
     margin-top: 5rem;
     width: 80vw;
-}
-
-.banner h1 span {
-    background-color: transparent;
 }
 
 span {
@@ -117,13 +118,16 @@ span {
     width: 20rem;
 }
 
-/*carousel*/
+/*Carousel*/
+.carousel{
+    height: 50vh;
+}
 
-/* .carousel {
-    height: 100vh;
-} */
+.carousel img{
+    height: 100%;
+}
 
-/*technical-assistance*/
+/*Technical Assistance*/
 
 .technical-assistance {
     height: auto;
@@ -133,12 +137,14 @@ span {
 }
 
 .technical-assistance h2 {
-    width: 70%;
+    width: 90%;
+    font-size: 3rem;
+    margin-bottom: 4rem;
 }
 
 .technical-assistance p {
     text-align: justify;
-    width: 70%;
+    width: 80%;
     font-size: 1.5rem;
 }
 
@@ -148,18 +154,20 @@ span {
     color: white;
     border: 0;
     font-weight: 600;
+    margin-top: 2rem;
 }
 
 .assistance-image {
-    width: 25rem;
+    width: 30rem;
 }
 
-/*about*/
+
+/*About*/
 
 .about {
     height: auto;
     position: relative;
-    padding: 20rem 0;
+    margin: 10rem 0;
     overflow-x: hidden;
 }
 
@@ -186,7 +194,7 @@ span {
 }
 
 
-/*imagem decoração main*/
+/*Banners*/
 .image-first,
 .image-second,
 .image-third,
@@ -211,7 +219,7 @@ span {
     height: 50rem;
 }
 
-/*serviços*/
+/*Services*/
 
 .services {
     height: auto;
@@ -256,7 +264,7 @@ span {
     width: 35rem;
 }
 
-/*produtos*/
+/*Products*/
 
 .products-container img:hover {
     transform: scale(1.1);
@@ -376,6 +384,7 @@ span {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 60% 40%;
+    background-color: #1C1C1C;
 }
 
 .container-products-three a {
@@ -422,6 +431,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1C1C1C;
 }
 
 .container-products-three-one .container-two {
@@ -430,6 +440,7 @@ span {
     height: 100%;
     position: relative;
     overflow: hidden;
+    background-color: #1C1C1C;
 }
 
 .container-products-three-one .name-product h3 {
@@ -502,6 +513,7 @@ span {
     border-right: 6px solid #454545;
     position: relative;
     overflow: hidden;
+    background-color: #1C1C1C;
 }
 
 .container-three .keyboard-image {
@@ -550,6 +562,7 @@ span {
     position: relative;
     overflow: hidden;
     z-index: 0;
+    background-color: #1C1C1C;
 }
 
 .container-four .name-product {
@@ -577,7 +590,8 @@ span {
     border: 6px solid #454545;
     padding: 30px 40px;
     position: relative;
-    z-index: 1;
+    z-index: 1;    
+    background-color: #1C1C1C;
 }
 
 .container-products-three-three img {
@@ -633,10 +647,13 @@ span {
     font-size: 1.2rem;
 }
 
+
+
 /*footer*/
 
 footer {
     height: auto;
+    background-color: #1C1C1C;
 }
 
 .bar {
@@ -695,7 +712,6 @@ footer {
 }
 
 .whaterMark {
-    background-color: transparent;
     display: flex;
     align-items: center;
     bottom: 3rem;
@@ -723,7 +739,7 @@ footer {
 }
 
 
-/*media queries*/
+/*Media Queries*/
 
 @media screen and (max-width: 1800px) {
     .container-products-three {
@@ -789,6 +805,10 @@ footer {
         font-size: 1.6rem;
     }
 
+    .assistance-image {
+        width: 25rem;
+    }
+
 }
 
 @media screen and (max-width: 1596px) {
@@ -805,7 +825,6 @@ footer {
 @media screen and (max-width: 1444px) {
     .banner h1 {
         font-size: 4rem;
-        background-color: transparent;
     }
 
 }
@@ -886,11 +905,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    .container-products-one a,
-    .container-products-two a {
-        background-color: transparent;
-    }
-
 }
 
 @media screen and (max-width: 1139px) {
@@ -901,16 +915,25 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .assistance-image {
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
     .search-container {
         margin-top: 2rem;
     }
 
     .technical-assistance h2 {
-        width: 80vw;
+        width: 100%;
     }
-    
+
     .technical-assistance p {
-        width: 80vw;
+        width: 100%;
+    }
+
+    .carousel{
+        height: auto;
+        margin-top: 5rem;
     }
 
     .container-one .image-mobile {
@@ -961,10 +984,6 @@ footer {
         opacity: 0.2;
     }
 
-    #init {
-        margin-bottom: 0;
-    }
-
     .nav a {
         font-size: 0.8rem;
     }
@@ -1005,11 +1024,15 @@ footer {
         margin-bottom: 3rem;
     }
 
+    .about{
+        margin: 5rem 0;
+    }
     .about .container-about {
         padding-left: 8px;
     }
 
-    .about p {
+    .about p,
+    .technical-assistance p {
         text-align: justify;
         width: 100%;
         font-size: 1.2rem;
@@ -1025,7 +1048,8 @@ footer {
 
     .about h2,
     .services h2,
-    .products h2 {
+    .products h2,
+    .technical-assistance h2 {
         font-size: 2rem;
     }
 
@@ -1096,7 +1120,6 @@ footer {
         position: relative;
         left: 0;
         top: 0;
-        background-color: transparent;
         width: 20rem;
         margin-bottom: 20px;
     }
@@ -1149,7 +1172,6 @@ footer {
         width: 100%;
         bottom: 0;
         left: 0;
-        background-color: transparent;
     }
 
     .container-products-three-one .name-product,
@@ -1183,7 +1205,6 @@ footer {
         position: inherit;
         bottom: 0;
         left: 0;
-        background-color: transparent;
         margin-top: 2rem;
     }
 
@@ -1215,7 +1236,8 @@ footer {
         padding: 0px 50px;
     }
 
-    .about p {
+    .about p,
+    .technical-assistance p {
         text-align: justify;
         font-size: 1.2rem;
     }
@@ -1270,11 +1292,13 @@ footer {
     }
 
     .about .container-about h2,
-    .products h2 {
+    .products h2, 
+    .technical-assistance h2 {
         font-size: 1.8rem;
     }
 
-    .about .container-about p {
+    .about .container-about p,
+    .technical-assistance p {
         font-size: 1.1rem;
     }
 
@@ -1324,6 +1348,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
     .technical-assistance,
     .banner,
     .about,
@@ -1346,11 +1371,13 @@ footer {
 
     .about .container-about h2,
     .services h2,
-    .products h2 {
+    .products h2,
+    .technical-assistance h2 {
         font-size: 1.4rem;
     }
 
-    .about .container-about p {
+    .about .container-about p,
+    .technical-assistance p {
         font-size: 1rem;
     }
 

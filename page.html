@@ -8,14 +8,18 @@
         content="KLS Games, loja gamer, artigos para gamers, produtos otaku, produtos nerd, jogos eletrônicos, acessórios para gaming, equipamentos gamers, merchandising otaku, produtos geek, roupas nerd, periféricos para gaming, figuras colecionáveis, jogo de tabuleiro, camisetas temáticas, action figures, HQs e mangás, decoração geek, presentes para gamers, novidades do mundo gamer, colecionáveis de animes, tecnologia gamer">
     <meta name="description"
         content="Explore o universo gamer, otaku e nerd na KLS Games. Descubra uma vasta seleção de produtos, desde jogos eletrônicos e acessórios para gaming até merchandising otaku, roupas nerd, e colecionáveis de animes. Encontre tudo o que precisa para elevar sua experiência geek. Visite-nos e mergulhe no mundo da tecnologia gamer, com novidades, periféricos e muito mais. Satisfaça sua paixão por jogos e cultura nerd na KLS Games.">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-
     <title>KLS Games | Descubra um novo mundo</title>
 
+    <!--Style-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -27,11 +31,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300&family=Praise&display=swap"
         rel="stylesheet">
+
+    <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
-<body>
+<body id="body" class="body">
+    <!--Header-->
     <header class="container-fluid">
         <section class="container-lg container-fluid d-flex justify-content-center align-items-center flex-column">
             <nav class="w-100 navbar navbar-expand-lg navbar-dark" aria-label="Offcanvas navbar large">
@@ -85,15 +92,23 @@
             </div>
         </section>
     </header>
+
+    <!--Main-->
     <main class="container-fluid m-0 p-0 w-100">
-        <section class="container d-flex banner p-0 flex-column justify-content-center align-items-center" id="init">
-            <img src="./assets/images/logo-banner.png" alt="KLS Logo" class="logo-banner">
-            <h1 class="text-center">The <span>King</span> of <span>Games</span></h1>
+        <!--Initial Banner-->
+        <section class="container d-flex banner p-0 justify-content-center align-items-center" id="init">
+            <img src="./assets/images/name.png" alt="Image Name" class="d-lg-flex d-none">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./assets/images/logo-banner.png" alt="KLS Logo" class="logo-banner">
+                <h1 class="text-center">The <span>King</span> of <span>Games</span></h1>
+            </div>
+            <img src="./assets/images/name.png" alt="Image Name" class="d-lg-flex d-none">
         </section>
 
+        <!--Carousel promotions-->
         <section class="carousel container-fluid p-0">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner h-100">
                     <div class="carousel-item active">
                         <img src="./assets/images/teste-carrosel.jpg" class="d-block w-100" alt="...">
                     </div>
@@ -117,14 +132,23 @@
             </div>
         </section>
 
-        <section class="container-fluid technical-assistance align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
-            <section class="container align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
+        <!--Technical Assistance -->
+        <section
+            class="container-fluid technical-assistance align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
+            <section
+                class="container align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
                 <h2 class="text-lg-start text-center">Precisou de <span>Assistência Técnica</span>?</h2>
                 <div
-                    class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                    <div class="assistance-text align-items-lg-start align-items-center justify-content-lg-start justify-content-center text-lg-start text-center">
-                        <p class="text-lg-start text-center">Quebrou ou deu algum problema?
-                            Deixa com a gente!</p>
+                    class="d-flex flex-lg-row flex-column-reverse align-items-center justify-content-lg-between justify-content-center">
+                    <div
+                        class="assistance-text align-items-lg-start align-items-center justify-content-lg-start justify-content-center text-lg-start text-center">
+                        <p class="">Seja um drone, celular, setup de computador ou console de
+                            videogame, resolvemos tudo para você. Consertamos problemas com motores e sistemas de
+                            navegação de drones, fazemos troca de telas, baterias e reparos em celulares, diagnosticamos
+                            e reparamos componentes de setups de computador, e realizamos reparos em hardware e software
+                            de consoles. Deixe seus dispositivos com a gente e volte a usá-los como novos. Temos a
+                            solução para qualquer problema!
+                        </p>
                         <button>FALE COM ATENDENTE</button>
                     </div>
                     <img src="./assets/images/assistance-image.png" alt="" class="assistance-image">
@@ -132,6 +156,7 @@
             </section>
         </section>
 
+        <!--About-->
         <section class="container-fluid about px-0 d-flex align-items-center" id="about">
             <div class="retangle"></div>
             <div
@@ -150,10 +175,12 @@
             <img src="./assets/images/retangle.png" alt="Imagem de Faixa Vermelha">
         </section>
 
+        <!--First Banner Image-->
         <section class="container-fluid d-flex align-items-center image-first p-0">
             <img src="./assets/images/image.png" alt="Imagem Personagem e cenário de game">
         </section>
 
+        <!--Services-->
         <section class="container-fluid d-flex align-items-center justify-content-center services" id="services">
             <section class="container">
                 <h2 class="text-lg-start text-center">Descubra nossos <span>Serviços</span></h2>
@@ -216,10 +243,12 @@
             </section>
         </section>
 
+        <!--Second Banner image-->
         <section class="container-fluid d-flex align-items-center image-second p-0">
             <img src="./assets/images/game-zone-image.png" alt="Imagem decorativa cenário de Game">
         </section>
 
+        <!--Products-->
         <section class="container-fluid products p-0">
             <section class="container products-container d-flex flex-column justify-content-center align-items-center"
                 id="products">
@@ -363,10 +392,12 @@
 
         </section>
 
-        <section class="container-fluid carousel-products p-0">
+        <!--Carousel products-->
+        <!-- <section class="container-fluid carousel-products p-0">
             <section class="container d-flex flex-column justify-content-center align-items-center" id="products">
                 <h2 class="align-self-lg-start align-self-center text-lg-start text-center mb-5">Conheça
-                    <span>Mais</span></h2>
+                    <span>Mais</span>
+                </h2>
                 <h3>Consoles</h3>
                 <section class="w-100 d-flex flex-column products-one">
                     <div id="carouselProducts" class="carousel slide" data-bs-ride="carousel">
@@ -414,14 +445,17 @@
                         </button>
                     </div>
                 </section>
-            </section>
+            </section> -->
         </section>
 
+        <!--Last Banner Image-->
         <section class="container-fluid d-flex align-items-center image-third p-0">
             <img src="./assets/images/new-adventure-image.png" alt="Imagem decorativa de cenário de game">
         </section>
 
     </main>
+
+    <!--Footer-->
     <footer class="container-fluid m-0 p-0">
         <section class="footer-image container-fluid d-flex align-items-center p-0 m-0">
             <img src="./assets/images/footer-image.png" alt="Imagem decorativa de cenário de game do Rodapé">
@@ -481,6 +515,7 @@
                                 alt="Email Logo"></a>
                     </div>
                 </section>
+
                 <section class="copyright container-fluid d-flex align-items-center justify-content-center">
                     <p>© 2024 KLS Games, Todos os Direitos Reservados</p>
                 </section>
@@ -492,6 +527,8 @@
                 </section>
             </section>
     </footer>
+
+    <!--JavaScript-->
     <script src="./assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -502,6 +539,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </body>
 
 </html>
