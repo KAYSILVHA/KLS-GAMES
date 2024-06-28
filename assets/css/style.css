@@ -119,11 +119,11 @@ span {
 }
 
 /*Carousel*/
-.carousel{
+.carousel {
     height: 50vh;
 }
 
-.carousel img{
+.carousel img {
     height: 100%;
 }
 
@@ -590,7 +590,7 @@ span {
     border: 6px solid #454545;
     padding: 30px 40px;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
     background-color: #1C1C1C;
 }
 
@@ -649,21 +649,37 @@ span {
 
 
 /*Carousel*/
-/* @media (min-width: 768px) {
-    .carousel .carousel-item {
-        display: none;
-        transition: transform 0.6s ease-in-out;
-    }
+.carousel-products {
+    height: 90vh;
+}
+.carousel-products h2{
+    margin-bottom: 2rem;
+}
 
-    .carousel .carousel-item.active {
-        display: flex;
-    }
+.carousel-products h3{
+    font-family: 'Press Start 2P', system-ui;
+    color:#E82E35;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
 
-    .carousel .carousel-item-next, .carousel .carousel-item-prev {
-        display: flex;
-    }
-} */
+.carousel {
+    height: 100%;
+}
 
+.carousel-inner {
+    display: flex;
+    gap: 10px;
+}
+
+div.card {
+    width: 400px;
+    height: 500px;
+}
+
+.buttons {
+    position: relative;
+}
 
 .carousel #carouselProducts .carousel-item {
     display: flex;
@@ -674,7 +690,7 @@ span {
 .card {
     margin: 10px;
     width: 100%;
-} 
+}
 
 /*Footer*/
 
@@ -946,6 +962,7 @@ footer {
         width: 15rem;
         margin-bottom: 2rem;
     }
+
     .search-container {
         margin-top: 2rem;
     }
@@ -958,7 +975,7 @@ footer {
         width: 100%;
     }
 
-    .carousel{
+    .carousel {
         height: auto;
         margin-top: 5rem;
     }
@@ -1051,9 +1068,10 @@ footer {
         margin-bottom: 3rem;
     }
 
-    .about{
+    .about {
         margin: 5rem 0;
     }
+
     .about .container-about {
         padding-left: 8px;
     }
@@ -1319,7 +1337,7 @@ footer {
     }
 
     .about .container-about h2,
-    .products h2, 
+    .products h2,
     .technical-assistance h2 {
         font-size: 1.8rem;
     }
