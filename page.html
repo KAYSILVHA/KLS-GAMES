@@ -83,13 +83,13 @@
                     </div>
                 </div>
             </nav>
-            <div class="search-container d-flex justify-content-center align-items-center w-100">
+            <!-- <div class="search-container d-flex justify-content-center align-items-center w-100">
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar..."
                         aria-label="Search" aria-describedby="basic-addon1">
                 </div>
-            </div>
+            </div> -->
         </section>
     </header>
 
@@ -397,109 +397,71 @@
         </section>
 
         <!--Carousel products-->
-        <section class="container-fluid carousel-products p-0">
-            <section
-                class="container d-flex flex-column justify-content-lg-start align-items-lg-start justify-content-center align-items-center"
-                id="products">
+        <section class="container-fluid">
+            <div class="container text-center my-3">
                 <h2 class="align-self-lg-start align-self-center text-lg-start text-center">Conheça
                     <span>Mais</span>
                 </h2>
                 <h3 class="">Consoles</h3>
-                <section class="w-100 d-flex flex-column products-one">
-                    <div id="carouselProducts" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel card slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
                             <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 1</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto1.jpg" class="card-img-top"
-                                                    alt="Produto 1">
-                                                <p class="card-text">Descrição do produto 1.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 2</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto2.jpg" class="card-img-top"
-                                                    alt="Produto 2">
-                                                <p class="card-text">Descrição do produto 2.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 3</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto3.jpg" class="card-img-top"
-                                                    alt="Produto 3">
-                                                <p class="card-text">Descrição do produto 3.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=1">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 4</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto4.jpg" class="card-img-top"
-                                                    alt="Produto 4">
-                                                <p class="card-text">Descrição do produto 4.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=2">
                                     </div>
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 5</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto5.jpg" class="card-img-top"
-                                                    alt="Produto 5">
-                                                <p class="card-text">Descrição do produto 5.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=3">
                                     </div>
-                                    <div class="col-lg-4 col-md-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-header">Produto 6</div>
-                                            <div class="card-body">
-                                                <img src="./assets/images/produto6.jpg" class="card-img-top"
-                                                    alt="Produto 6">
-                                                <p class="card-text">Descrição do produto 6.</p>
-                                                <a href="#" class="btn btn-primary">Comprar</a>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=6">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="buttons">
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducts"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProducts"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </section>
-            </section>
-        </section>
-
+                </div>
+            </div>
         </section>
 
         <!--Last Banner Image-->
