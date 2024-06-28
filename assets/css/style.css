@@ -89,6 +89,7 @@ span.input-group-text i {
 
 .highlight {
     background-color: rgb(80, 0, 11);
+    color: white;
 }
 
 .navbar-nav a.nav-link.active {
