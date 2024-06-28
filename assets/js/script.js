@@ -1,7 +1,3 @@
-document.getElementById('searchInput').addEventListener('input', function(event) {
-    searchPage();
-});
-
 function searchPage() {
     const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
     const content = document.querySelector('.content');
