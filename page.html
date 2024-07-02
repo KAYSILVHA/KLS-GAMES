@@ -44,7 +44,7 @@
 
 </head>
 
-<body id="body" class="body content">
+<body id="search-results" class="body">
     <!--Header-->
     <header class="container-fluid">
         <section class="container-lg container-fluid d-flex justify-content-center align-items-center flex-column">
@@ -90,13 +90,13 @@
                     </div>
                 </div>
             </nav>
-            <!-- <div class="search-container d-flex justify-content-center align-items-center w-100">
+            <div class="search-container d-flex justify-content-center align-items-center w-100">
                 <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <span class="input-group-text" id="search-b"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar..."
-                        aria-label="Search" aria-describedby="basic-addon1">
+                        aria-label="Search" aria-describedby="basic-addon1" onkeypress="handleKeyPress(event)">
                 </div>
-            </div> -->
+            </div>
         </section>
     </header>
 
@@ -113,7 +113,7 @@
         </section>
 
         <!--Carousel promotions-->
-        <section class="carousel container-fluid p-0">
+        <section class="carousel container-fluid p-0 promotions">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner h-100">
                     <div class="carousel-item active">
@@ -403,82 +403,130 @@
 
         </section>
 
-        <!--Carousel products-->
-        <section class="container-fluid">
-            <div class="container text-center my-3">
-                <h2 class="align-self-lg-start align-self-center text-lg-start text-center">Conheça
-                    <span>Mais</span>
-                </h2>
-                <h3 class="">Consoles</h3>
-                <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
-                    <div class="carousel-inner w-100">
-                        <div class="carousel-item active">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=1">
+        <!--Carousel products desktop-->
+        <section class="container-fluid carousel-card h-auto d-md-flex d-none">
+            <div class="container py-5 h-100">
+                <div id="carouselExample" class="carousel slide h-100" data-ride="carousel">
+                    <div class="carousel-inner carousel-card-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <div class="d-flex align-items-center justify-content-center h-100">
+                                <div class="card mx-2 carousel-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 1</h5>
+                                        <p class="card-text">Conteúdo do Card 1.</p>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 carousel-card ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 2</h5>
+                                        <p class="card-text">Conteúdo do Card 2.</p>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 carousel-card ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 3</h5>
+                                        <p class="card-text">Conteúdo do Card 3.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=2">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="card mx-2 carousel-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 4</h5>
+                                        <p class="card-text">Conteúdo do Card 4.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=3">
+                                <div class="card mx-2 carousel-card ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 5</h5>
+                                        <p class="card-text">Conteúdo do Card 5.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=5">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=6">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=7">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=8">
+                                <div class="card mx-2 carousel-card ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card 6</h5>
+                                        <p class="card-text">Conteúdo do Card 6.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="next">
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel products mobile-->
+        <section class="container-fluid cards-mobile d-md-none d-flex">
+            <div class="container py-5">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 1</h5>
+                                    <p class="card-text">Conteúdo do Card 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 2</h5>
+                                    <p class="card-text">Conteúdo do Card 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 3</h5>
+                                    <p class="card-text">Conteúdo do Card 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 4</h5>
+                                    <p class="card-text">Conteúdo do Card 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 5</h5>
+                                    <p class="card-text">Conteúdo do Card 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mx-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 6</h5>
+                                    <p class="card-text">Conteúdo do Card 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
                 </div>
             </div>
         </section>
