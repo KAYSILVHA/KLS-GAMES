@@ -121,46 +121,47 @@ span {
 
 /*Carousel*/
 
-.carousel.card {
-    height: auto;
-}
-
-.carousel.card img {
-    height: 100%;
-}
-
 @media (max-width: 768px) {
-    .carousel.card .carousel-inner .carousel-item-card>div {
-        display: none;
+    .carousel.card .carousel-inner .carousel-item > div {
+      display: none;
     }
-
-    .carousel.card .carousel-inner .carousel-item-card>div:first-child {
-        display: block;
+    .carousel.card .carousel-inner .carousel-item > div:first-child {
+      display: block;
     }
-}
-
-.carousel.card .carousel-inner .carousel-item-card.active,
-.carousel.card .carousel-inner .carousel-item-next,
-.carousel.card .carousel-inner .carousel-item-prev {
+  }
+  
+  .carousel.card .carousel-inner .carousel-item.active,
+  .carousel.card .carousel-inner .carousel-item-start,
+  .carousel.card .carousel-inner .carousel-item-next,
+  .carousel.card .carousel-inner .carousel-item-prev {
     display: flex;
-}
-
-@media (min-width: 768px) {
+    /* transition-duration: 10s; */
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
     .carousel.card .carousel-inner .carousel-item-right.active,
-    .carousel.card .carousel-inner .carousel-item-next {
-        transform: translateX(33.333%);
+    .carousel.card .carousel-inner .carousel-item-next,
+    .carousel.card .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
     }
-
+  
     .carousel.card .carousel-inner .carousel-item-left.active,
-    .carousel.card .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.333%);
+    .carousel.card .carousel-item-prev:not(.carousel-item-end),
+    .carousel.card .active.carousel-item-start,
+    .carousel.card .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
     }
-}
-
-.carousel.card .carousel-inner .carousel-item-right,
-.carousel.card .carousel-inner .carousel-item-left {
-    transform: translateX(0);
-}
+  
+    .carousel.card .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+      transform: translateX(0) !important;
+    }
+  
+    .carousel.card .carousel-inner .carousel-item-prev,
+    .carousel.card .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+    }
+  }
 
 /*Technical Assistance*/
 
