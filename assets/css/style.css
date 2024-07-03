@@ -656,11 +656,57 @@ span {
     justify-content: center;
 }
 
-.carousel-card {
-    width: 20rem;
-    min-height: 25rem;
+.carousel-card{
+    padding: 0 0 5rem;
 }
 
+.card.carousel-card span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.mini-text{
+    width: 100px;
+}
+
+.card.carousel-card {
+    border: 1px solid #E82E35;
+    width: 20rem;
+    min-height: 25rem;
+    background: #242424;
+    padding: 10px 0;
+}
+
+.card.carousel-card button:hover {
+    background: #E82E3580;
+}
+
+.card.carousel-card img{
+    margin-bottom: 20px;
+}
+
+.card.carousel-card button{
+    background: #E82E35;
+    color: #fff;
+    border: 0;
+    padding: 5px 20px;
+}
+
+.card.carousel-card .text-card{
+    margin: 10px 0;
+}
+.text{
+    margin: 10px 0;
+}
+.mini-text{
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 20px
+}
 
 @media (max-width: 768px) {
     
