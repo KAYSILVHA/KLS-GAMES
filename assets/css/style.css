@@ -15,7 +15,8 @@ main {
 
 .about h2,
 .services h2,
-.products h2 {
+.products h2,
+.carousel-card h2 {
     font-size: 3rem;
 }
 
@@ -650,23 +651,36 @@ span {
 }
 
 /*Products Cards*/
+
+.carousel-card h3,
+.cards-mobile h3 {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
 .carousel-item {
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
-.carousel-card{
-    padding: 0 0 5rem;
+.carousel-card {
+    padding: 0 0 7rem;
 }
 
-.card.carousel-card span{
+.cards-mobile .mini-text span,
+.cards-mobile .text-card span,
+.carousel-card .mini-text span,
+.carousel-card .text-card span {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1rem;
 }
-.mini-text{
-    width: 100px;
+
+.mini-text {
+    width: 150px;
 }
 
 .card.carousel-card {
@@ -681,35 +695,38 @@ span {
     background: #E82E3580;
 }
 
-.card.carousel-card img{
+.card.carousel-card img {
     margin-bottom: 20px;
 }
 
-.card.carousel-card button{
+.card.carousel-card button {
     background: #E82E35;
     color: #fff;
     border: 0;
     padding: 5px 20px;
+    border-radius: 5px;
 }
 
-.card.carousel-card .text-card{
+.card.carousel-card .text-card {
     margin: 10px 0;
 }
-.text{
+
+.text {
     margin: 10px 0;
 }
-.mini-text{
+
+.mini-text {
     font-size: 0.8rem;
     margin: 10px 0;
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     padding: 20px
 }
 
 @media (max-width: 768px) {
-    
+
     .carousel-inner {
         display: flex;
         flex-wrap: nowrap;
@@ -720,6 +737,43 @@ span {
     }
 }
 
+
+.cards-mobile .carousel-inner {
+    width: 70vw;
+}
+
+.cards-mobile .card {
+    max-width: 80vw;
+    border: 1px solid #E82E35;
+    background: #242424;
+    padding: 10px 0;
+}
+
+.cards-mobile {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cards-mobile .mini-text {
+    width: 100px;
+}
+
+.cards-mobile button:hover {
+    background: #E82E3580;
+}
+
+.cards-mobile img {
+    margin-bottom: 20px;
+    width: 9rem;
+}
+
+.cards-mobile button {
+    background: #E82E35;
+    color: #fff;
+    border: 0;
+    padding: 5px 20px;
+}
 
 /*Footer*/
 
@@ -932,6 +986,11 @@ footer {
         width: auto;
         height: 10rem;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background: #E82E35;
+    }
 }
 
 @media screen and (max-width: 1339px) {
@@ -987,6 +1046,15 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .cards-mobile {
+        padding: 0 0 7rem;
+    }
+
+    .card.carousel-card img {
+        margin-bottom: 20px;
+        width: 10rem;
+    }
+
     .assistance-image {
         width: 15rem;
         margin-bottom: 2rem;
@@ -1118,7 +1186,8 @@ footer {
     .about h2,
     .services h2,
     .products h2,
-    .technical-assistance h2 {
+    .technical-assistance h2,
+    .carousel-card h2 {
         font-size: 2rem;
     }
 
@@ -1362,7 +1431,8 @@ footer {
 
     .about .container-about h2,
     .products h2,
-    .technical-assistance h2 {
+    .technical-assistance h2,
+    .carousel-card h2 {
         font-size: 1.8rem;
     }
 
@@ -1441,7 +1511,8 @@ footer {
     .about .container-about h2,
     .services h2,
     .products h2,
-    .technical-assistance h2 {
+    .technical-assistance h2,
+    .carousel-card h2 {
         font-size: 1.4rem;
     }
 
